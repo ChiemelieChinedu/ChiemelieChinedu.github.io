@@ -15,8 +15,8 @@
     }
 
         .navbar .logo img {
-            line-height: 25px;
-            width: 25px;
+            line-height: 20px;
+            width: 20px;
         }
 
         .navbar .logo {
@@ -24,7 +24,7 @@
         }
 
             .navbar .logo a {
-                font-size: 16px;
+                font-size: 14px;
             }
 
     .menu {
@@ -34,7 +34,7 @@
         background-color: white;
         height: 30px;
         width: 25px;
-        padding-top: 5px;
+        padding-top: 3px;
         position: absolute;
         right: 0;
     }
@@ -362,6 +362,7 @@
             width: 100%;
             padding:0;
             font-size:13px;
+            font-weight:400;
         }
 
     /**************ContactPage**********/
