@@ -1,0 +1,134 @@
+<!DOCTYPE html>
+
+<html lang="en" xmlns="http://www.w3.org/1999/xhtml">
+<head>
+    <meta charset="utf-8" />
+    <title></title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.12.1/css/all.min.css">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" type="text/css" href="assignment.css">
+    <link rel="stylesheet" type="text/css" href="assignmentSec.css"> 
+</head>
+<body>
+    <div class="container" id="section">
+        <header>
+            <div class="navbar">
+                <div class="logo">
+                    <img src="./bookIcon.ico" alt="SiteLogo">
+                    <a href="#">proLessons_Technology</a>
+                </div>
+                <div id="nav" class="menuBar">
+                    <ul>
+                        <li><a target="_blank" href="prolessons.html">Home</a></li>
+                        <li><a href="#section1">About Us</a></li>
+                        <li><a href="#section2">Services</a></li>
+                        <li><a href="#section3">ContactUs</a></li>
+                    </ul>
+                </div>
+                <div class="menuBars">
+
+                    <div>
+                        <button class="btn1" id="myBtn">Log In</button>
+                        <div id="myModal" class="modal">
+                            <!-- Modal content -->
+                            <div class="modal-content">
+                                <span class="close">&times;</span>
+                                <h2>Login Form</h2>
+                                <div class="subModal">
+                                    <div class="imgClass">
+                                        <img src="./LoginLogo.jpg" alt="book missing" />
+                                    </div>
+                                    <div class="subModalText">
+                                        <div class="input-container">
+                                            <i class="fas fa-user-tie icons"></i>
+                                            <input id="txtUserName" class="input-field" placeholder="Username" type="text" />
+                                        </div>
+                                        <div class="input-container">
+                                            <i class="fa fa-key icons"></i>
+                                            <input type="password" id="txtPassword" class="input-field" placeholder="Password" />
+                                        </div>
+
+                                    </div>
+                                    <div class="imgClass2">
+                                        <img src="./M6hvZ.png" alt="book missing" />
+                                    </div>
+                                </div>
+                                <input type="submit" value="Submit" class="btn" Text="Login" OnClick="Button2_Click">
+
+                                <label ID="txtError" runat="server" BackColor="Red" ForeColor="White"></label>
+                                <div>
+                                    <asp:CheckBox ID="chkRem" Text="Remember Me" runat="server" />
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div>
+                        <button class="btn1" id="myBtn2">Sign Up</button>
+                        <div id="myModal2" class="modal">
+                            <!-- Modal content -->
+                            <div class="modal-content">
+                                <span class="close">&times;</span>
+                                <h2>Registration Form</h2>
+                                <div class="input-container">
+                                    <input type="text" id="txtEmail" class="input-field" placeholder="Email" />
+                                </div>
+                                <div class="input-container">
+                                    <input type="password" id="txtPassword" class="input-field" placeholder="Password" />
+                                </div>
+                                <div class="input-container">
+                                    <input type="password" id="txtPassword" class="input-field" placeholder="ConfirmPassword" />
+                                </div>
+                                <input type="submit" value="Submit" class="btn" Text="Register" OnClick="Button2_Click">
+                                <label ID="txtError" runat="server" BackColor="Red" ForeColor="White"></label>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <script>
+                    // Get the modal
+                    var modal = document.getElementById("myModal");
+                    var modal2 = document.getElementById("myModal2");
+                    // Get the button that opens the modal
+                    var btn = document.getElementById("myBtn");
+                    var btn2 = document.getElementById("myBtn2");
+                    // Get the <span> element that closes the modal
+                    var span = document.getElementsByClassName("close")[0];
+                    var span2 = document.getElementsByClassName("close")[1];
+
+                    // When the user clicks on the button, open the modal
+                    btn.onclick = function () {
+                        modal.style.display = "block";
+                    }
+                    btn2.onclick = function () {
+                        modal2.style.display = "block";
+                    }
+
+                    // When the user clicks on <span> (x), close the modal
+                    span.onclick = function () {
+                        modal.style.display = "none";
+                    }
+                    span2.onclick = function () {
+                        modal2.style.display = "none";
+                    }
+                    // When the user clicks anywhere outside of the modal, close it
+                    window.onclick = function (event) {
+                        if (event.target == modal || event.target == modal2) {
+                            modal.style.display = "none";
+                            modal2.style.display = "none";
+                        }
+                    }
+                </script>
+
+                <p class="menu"><a href="javascript:void(0);" onclick="clickfunction()"><i class="fa fa-bars"></i></a></p>
+            </div>
+        </header>
+        <div class="bannerArea">
+            <div class="bannerImage"></div>
+            <h1>Software Engineering Company</h1>
+            <h3>We design any kind of Enterprise Software</h3>
+            <a href="#">Send Us a Message</a>
+        </div>
+    </div>
+</body>
+</html>

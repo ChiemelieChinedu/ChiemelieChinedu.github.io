@@ -1,0 +1,251 @@
+.PharmacysecPage {
+    width: 100%;
+    background-color: whitesmoke;
+    margin-top: 50px;
+}
+
+    .PharmacysecPage .subSecPage {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        width: 100%;
+        margin-left: auto;
+        margin-right: auto;
+        padding-bottom: 50px;
+    }
+
+.PharmacysecPage .subSecPage .PageImage {
+            margin-top: 20px;
+            padding-left:10px;
+            width: 55%;
+        }
+.PharmacysecPage .subSecPage .pageText {
+    margin-top: 20px;
+    width: 45%;
+    padding-right: 10px;
+}
+    .PharmacysecPage .subSecPage .pageText h2 {
+        margin-bottom: 30px;
+    }
+
+        .PharmacysecPage .subSecPage .PageImage img {
+            border-top-right-radius: 50px;
+            height: 60vh;
+            width: 105vh
+        }
+/***************ThirdPage**************/
+.PharmacythirdPage {
+    width: 100%;
+    margin-top: 50px;
+}
+
+    .PharmacythirdPage .subthirdPage {
+        padding-top: 50px;
+    }
+
+        .PharmacythirdPage .subthirdPage .mySlides2 {
+            display: none;
+            width: 98%;
+            justify-content: center;
+            margin-left: auto;
+            margin-right: auto;
+        }
+
+            .PharmacythirdPage .subthirdPage .mySlides2 .text {
+                width: 40%;
+            }
+
+                .PharmacythirdPage .subthirdPage .mySlides2 .text h3 {
+                    font-family: Verdana;
+                    margin-bottom: 25px;
+                }
+
+                .PharmacythirdPage .subthirdPage .mySlides2 .text p {
+                    color: darkslategray;
+                    padding-right: 50px;
+                    padding-left: 10px;
+                    padding-bottom: 10px;
+                    font-family: Georgia;
+                    font-weight: bolder;
+                    font-size: 15px;
+                    line-height: 20px;
+                    text-align: justify;
+                }
+
+                .PharmacythirdPage .subthirdPage .mySlides2 .text button {
+                    margin-top: 50px;
+                    padding: 15px;
+                    font-size: 15px;
+                    font-weight: bolder;
+                    border-radius: 10px;
+                    background-color: darkgreen;
+                    color: white;
+                }
+
+            .PharmacythirdPage .subthirdPage .mySlides2 .image {
+                width: 58%;
+            }
+
+                .PharmacythirdPage .subthirdPage .mySlides2 .image img {
+                    box-shadow: 0px 10px 10px #aaaaaa;
+                    border-top-right-radius: 50px;
+                    height: 65vh;
+                    width: 120vh
+                }
+                .ResultCompute img {
+                    box-shadow: 0px 10px 10px #aaaaaa;
+                    border-top-right-radius: 50px;
+                    height: 120vh;
+                    width: 100vh
+                }
+    .PharmacythirdPage .dotCircles {
+        padding: 25px 0;
+        text-align: center;
+    }
+
+/***************FourthPage**************/
+.fourthPage {
+    width: 100%;
+    background-color: whitesmoke;
+    height: auto;
+}
+
+.subfourthPage {
+    width: 98%;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    flex-wrap: wrap;
+}
+
+.subfourthImage {
+    width: 45%;
+    margin: 25px 10px;
+    text-align: center;
+}
+
+    .subfourthImage img {
+        box-shadow: 0px 10px 10px #aaaaaa;
+        border-top-right-radius: 50px;
+        height: 55vh;
+        width: 90vh;
+        margin-bottom: 10px
+    }
+/***********Moblie View*************/
+@media (min-width:320px) and (max-width: 767px) {
+    body {
+        width: 100%;
+        overflow-x: hidden;
+    }
+    .PharmacysecPage .subSecPage {
+        display: flex;
+        flex-direction:column-reverse;
+        
+    }
+        .PharmacysecPage .subSecPage .PageImage {
+            margin-top: 20px;
+            padding-left:0px;
+            width: 98%;
+        }
+
+        .PharmacysecPage .subSecPage .pageText {
+            margin-top: 20px;
+            width: 98%;
+            padding-right:0px;
+            padding-left:5px;
+        }
+        .PharmacysecPage .subSecPage .PageImage img {
+            border-top-right-radius: 50px;
+            height: 60vh;
+            width: 80vh
+        }
+    /***************ThirdPage**************/
+    .PharmacythirdPage {  
+        margin-top:0px;
+    }
+    .PharmacythirdPage .subthirdPage .mySlides2 {
+        flex-direction:column;
+    }
+    .PharmacythirdPage .subthirdPage .mySlides2 .text {
+        width: 98%;
+    }
+        .PharmacythirdPage .subthirdPage .mySlides2 .text p {
+            
+            padding-right:0px;
+        }
+
+        .PharmacythirdPage .subthirdPage .mySlides2 .text button {
+            margin-top: 10px;
+            padding: 10px;
+            font-size: 12px;
+        }
+
+    .PharmacythirdPage .subthirdPage .mySlides2 .image {
+        width: 98%;
+        padding-top:20px;
+    }
+
+        .PharmacythirdPage .subthirdPage .mySlides2 .image img {
+     
+            height: 50vh;
+            width: 80vh
+        }
+}
+@media (min-width:768px) and (max-width: 1200px) {
+    /*********************Header************/
+    body {
+        width: 100%;
+        overflow-x: hidden;
+    }
+    .PharmacysecPage .subSecPage {
+        display: flex;
+        flex-direction: column-reverse;
+    }
+    .PharmacysecPage .subSecPage .PageImage {
+        margin-top: 20px;
+        padding-left: 0px;
+        width: 98%;
+    }
+
+    .PharmacysecPage .subSecPage .pageText {
+        margin-top: 20px;
+        width: 98%;
+        padding-right: 0px;
+        padding-left: 15px;
+    }
+        .PharmacysecPage .subSecPage .PageImage img {
+            border-top-right-radius: 50px;
+            height: 60vh;
+            width: 134vh
+        }
+
+    /***************ThirdPage**************/
+    .PharmacythirdPage {
+        margin-top: 0px;
+    }
+    .PharmacythirdPage .subthirdPage .mySlides2 {
+        flex-direction: column;
+    }
+
+        .PharmacythirdPage .subthirdPage .mySlides2 .text {
+            width: 98%;
+        }
+
+            .PharmacythirdPage .subthirdPage .mySlides2 .text p {
+                padding-right: 0px;
+            }
+
+            .PharmacythirdPage .subthirdPage .mySlides2 .text button {
+                margin-top: 10px;
+            }
+
+        .PharmacythirdPage .subthirdPage .mySlides2 .image {
+            width: 98%;
+            padding-top: 20px;
+        }
+
+            .PharmacythirdPage .subthirdPage .mySlides2 .image img {
+                height: 55vh;
+                width: 135vh
+            }
+}

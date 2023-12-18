@@ -1,0 +1,1605 @@
+        *{
+            margin: 0;
+            padding:0;
+            box-sizing: border-box;
+            
+        }
+         html {
+  scroll-behavior: smooth;
+}
+
+header {
+    max-width: 100%;
+    z-index: 1;
+    padding: 5px 10px;
+}
+        .navbar
+        {
+            
+            display:flex;
+            justify-content:space-between;
+            align-items:center;
+            
+        }
+            .navbar .logo{
+                display:flex;
+                align-items:center;
+                justify-content:flex-start;
+            }
+            .navbar .logo img {
+                line-height: 35px;
+                width: 35px;
+                text-align: center;
+                border-radius: 50%;
+            }
+           
+            .navbar .logo a {
+                text-decoration: none;
+                font-weight: 700;
+                font-size: 25px;
+                font-family: 'Agency FB';
+                color: darkviolet
+            }
+        .navbar ul{
+            list-style:none;
+            display:flex;
+            margin: 0px 15px;
+
+        }
+        .navbar ul li{
+            padding: 0px 15px;
+        }
+        .navbar ul li a{
+            text-decoration:none;
+            color:darkblue;
+            font-size:20px;
+            font-weight:600;
+           
+        }
+         .navbar ul li a:hover {
+                color:brown;
+                padding-bottom:10px;
+                border-bottom: 2px solid brown;
+            }
+        .navbar ul li {
+        }
+.menuBars {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+.menuBars button {
+    border-radius: 20px;
+    font-size: 15px;
+    font-weight: 600;
+    padding: 5px 10px;
+    color: #333;
+    cursor: pointer;
+    border: 2px solid #fff;
+    transition: background .4s;
+    margin-right:8px;
+}
+.navbar .btn1:hover {
+    background-color: antiquewhite;
+    border: 2px solid blue;
+}
+            .navbar .btn2:hover{
+                background-color:antiquewhite;
+                 border: 2px solid blue;
+            }
+/* The Modal (background) */
+.modal {
+    display: none; /* Hidden by default  */
+    position: fixed; /* Stay in place */
+    z-index: 1; /* Sit on top */
+    right: 0;
+    top: 0;
+    width: 50%; /* Full width */
+    height: 50%; /* Full height */
+    background-color: rgb(0,0,0); /* Fallback color */
+    background-color: rgba(0,0,0,0.4); /* Black w/ opacity */
+}
+
+/* Modal Content/Box */
+.modal-content {
+    background-color: #fefefe;
+    margin: 5% auto; /* 15% from the top and centered */
+    padding: 20px;
+    border: 1px solid #888;
+    width: 95%; /* Could be more or less, depending on screen size */
+}
+.modal-content .subModal
+{
+    width:100%;
+    display:flex;
+    align-items:center;
+    justify-content:space-between;
+}
+    .modal-content .subModal .subModalText
+    {
+        width:70%;
+    }
+    .modal-content .subModal .imgClass {
+        width: 15%;
+    }
+    .modal-content .subModal .imgClass2 {
+        width: 10%;
+        background-color:orange;
+        text-align:center;
+    }
+    .modal-content .subModal .imgClass img {
+        width: 100px;
+        height: 100px;
+        
+    }
+        .modal-content .subModal .imgClass2 img {
+            width: 50px;
+            height: 50px;
+            border-radius:50%;
+        }
+    /* The Close Button */
+    .close {
+        color: #aaa;
+        float: right;
+        font-size: 28px;
+        font-weight: bold;
+    }
+
+    .close:hover,
+    .close:focus {
+        color: black;
+        text-decoration: none;
+        cursor: pointer;
+    }
+/* Style the input container */
+.modal-content .input-container {
+    display: flex;
+    width: 100%;
+    margin-bottom: 15px;
+   
+}
+.modal-content h2{
+    margin-bottom:10px;
+}
+/* Style the form icons */
+.modal-content .input-container .icons {
+    padding: 10px;
+    background: dodgerblue;
+    color: white;
+    min-width: 50px;
+    text-align: center;
+    height: 40px;
+}
+
+/* Style the input fields */
+.modal-content .input-container .input-field {
+    width: 100%;
+    padding: 10px;
+    outline: none;
+}
+
+    .input-field:focus {
+        border: 2px solid dodgerblue;
+    }
+
+/* Set a style for the submit button */
+.btn {
+    background-color: dodgerblue;
+    color: white;
+    padding: 15px 20px;
+    border: none;
+    cursor: pointer;
+    width: 100%;
+    opacity: 0.9;
+}
+
+    .btn:hover {
+        opacity: 1;
+    }
+/***************MenuIcon***********/
+.menu {
+    display: none;
+}
+        /********BANNER AREA*******/
+        .bannerArea
+        {
+            max-width:100%;
+            overflow:hidden;
+            margin:0 auto;
+            background-image:url(./img.jpg);
+            background-repeat: no-repeat;
+            background-size: cover;
+            height:40vh;
+            padding:0;
+            margin-top:5px;
+            display:flex;
+            flex-direction:column;
+            align-items:center;
+            
+           
+        }
+        .bannerArea h1{
+            color:antiquewhite;
+            font-family:Algerian;
+            font-size:35px;
+            font-weight:900;
+            margin: 40px 0;
+            animation: h1anim 5s ease forwards;
+        }
+        @keyframes h1anim
+        {
+            from{opacity:0.1;}
+            to{opacity:1}
+        }
+        .bannerArea h3{
+            color:antiquewhite;
+            font-family:Cambria;
+            font-weight:700;
+            opacity:1;
+            overflow-y:hidden;
+            animation: h3anim 0.5s ease forwards;
+        }
+        @keyframes h3anim
+        {
+            from{margin-bottom:150px;}
+            to{margin-bottom:40px}
+        }
+        .bannerArea a{
+           background-color:crimson;
+           padding:15px 35px;
+           font-weight:900;
+           border-radius:50px;
+           text-transform:uppercase;
+           color:white;
+           text-decoration:none;
+           opacity:1;
+        }
+        /************ABOUT US*********/
+.Container {
+    max-width:100%;
+    margin: 45px 0;
+}
+        .Container h1{
+            margin-top:10px;
+            font-family:'Agency FB';
+            color:blue;
+            margin-bottom:15px;
+            font-size:35px;
+        }
+.AboutUS {
+    width:90%;
+    margin-right: auto;
+    margin-left: auto;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    flex-wrap: wrap;
+}
+    .AboutUS .AboutUSText {
+        display: flex;
+        flex-direction: column;
+        flex-wrap: wrap;
+        width: 55%;
+        padding: 25px 20px;
+        background: #fafafa;
+        box-shadow: 0px 5px 20px rgba(0,0,0,0.1);
+        border-radius: 50px;
+    }
+.AboutUS .AboutUSText p {
+    width: 99%;
+    text-align: justify;
+    margin-bottom: 25px;
+    line-height: 25px;
+    font-family: 'Teko', sans-serif;
+    font-size: 20px;
+    padding: 10px 0;
+    color: gray;
+}
+    .AboutUS .AboutUSImage {
+        width: 40%;
+    }
+.AboutUS .AboutUSImage img {
+    width: 100%;
+    height: auto
+}
+    .AboutUS .AboutUSText h3 {
+        margin-bottom: 15px
+    }
+         /***********Container Section2*************/
+#section2
+{
+     background-color:#fafafa;
+     height:auto;
+     padding:0 25px;
+}
+      .Service h2{
+          text-align:center;
+          color:rebeccapurple;
+          font-size:30px;
+            font-weight:200;
+            opacity:1;
+             animation-name: animate2;
+        animation-duration: 4s;
+        animation-iteration-count:100;
+        margin-bottom:20px;
+      }
+      .Service h2:before,
+       .Service h2:after {
+            background-color:silver;
+            content: "";
+            display: inline-block;
+            height: 5px;
+            position: relative;
+            vertical-align: middle;
+            width: 5%;
+            
+        }
+       @keyframes animate2 {
+        0% {
+            color: blue;
+        }
+
+        25% {
+            color: purple
+        }
+
+        50% {
+            color: orangered;
+        }
+
+        100% {
+            color: darkblue;
+        }
+    }
+        .Service h2:before {
+            right: 0.5em;
+            margin-left: -50%;
+        }
+
+       .Service h2:after {
+            left: 0.5em;
+            margin-right: -50%;
+        }
+
+       /***************Tab Buttons********/
+.tabButton {
+    display:flex;
+    width:95%;
+    margin-bottom:0px;
+}
+    .tabButton .tablinks {
+        background-color: royalblue;
+        color: white;
+        width: 50%;
+        text-align: center;
+        border-radius: 50px;
+        border-color: white;
+        margin-right: 10px;
+    }
+    .tabButton .tablinks .tabHeader {
+        display: flex;
+        align-items: center;
+        justify-content:flex-start;
+        width: 100%;
+        margin-left: auto;
+        margin-right: auto;
+        line-height: 20px;
+        padding: 15px 10px;
+    }
+        .tabButton .tablinks .tabHeader h2{
+            margin-left:10px;
+        }
+      .tabButton img
+      {
+          width:40px;
+          height:30px;
+      }
+      .tabButton i
+      {
+           font-size:35px;
+      }
+      /*********tabButton Extra Properties********/
+      /* Change background color of buttons on hover */
+.active, .tabButton button:hover {
+    background-color: midnightblue;
+    cursor: pointer;
+}
+
+/* Create an active/current tablink class */
+    .tabButton button:active {
+        color: midnightblue;
+    }
+.tabcontent {
+  display: none;
+  padding: 6px 12px;
+  margin-left:20px;
+  animation:fadeEffect 1s; /* Fading effect takes 1 second */
+}
+    .tabcontent span:hover {
+        line-height: 20px;
+        width: 20px;
+        border-radius: 50%;
+        background-color: red;
+        cursor: pointer;
+        color: white;
+    }
+/* Go from zero to full opacity */
+@keyframes fadeEffect {
+  from {opacity: 0;}
+  to {opacity: 1;}
+}
+/****************tabContent Contents************/
+.tabcontentBody
+{
+    display:flex;
+    flex-wrap:wrap;
+    align-items:center;
+    width:100%;
+    margin-top:0px;
+}
+.tabcontent .leftDiv{
+    width:40%;
+    font-size:18px;
+    font-family:poppins, sans-serif;
+    text-align:justify;
+
+}
+    .tabcontent .leftDiv p {
+        padding-bottom: 10px;
+        line-height: 25px;
+    }
+.tabcontent .rightDiv {
+    width: 60%;
+    text-align:center;
+    margin-top:15px;
+}
+    .tabcontent .rightDiv img {
+        margin-top:20px;
+        width: 680px;
+        height: 400px;
+        vertical-align:middle;
+        margin-bottom:10px;
+    }
+.tabcontent ul {
+    list-style: none;
+    margin-top:10px;
+}
+    .tabcontent ul li a {
+        text-decoration: none;
+        font-family: Georgia, 'Times New Roman', Times, serif;
+        font-weight: 800;
+        color:darkslateblue;
+        cursor:pointer;
+
+    }
+     .tabcontent ul li a:hover
+     {
+         color:lightgray;
+     }
+.tabcontent i {
+    color:white;
+    margin-right: 1rem;
+    margin-bottom: 1rem;
+    text-align: center;
+    line-height: 1rem;
+    width: 1rem;
+    border-radius: 50%;
+    background-color:palevioletred;
+}
+/********tabContent Image Slider***********/
+.tabcontent .rightDiv .mySlides {
+    display: none;
+    position:relative;
+}
+.tabcontent .rightDiv .text {
+    position:relative;
+    color:blue;
+    font-size: 20px;
+    padding: 10px 15px;
+    width: 100%;
+    font-weight: bolder;
+   
+}
+/* The dots/bullets/indicators */
+.dot {
+  position:relative;
+  cursor: pointer;
+  height: 15px;
+  width: 15px;
+  margin: 0 2px;
+  background-color:blueviolet;
+  border-radius: 50%;
+  display: inline-block;
+  transition: background-color 0.6s ease;
+}
+.dota {
+    position: relative;
+    cursor: pointer;
+    height: 15px;
+    width: 15px;
+    margin: 0 2px;
+    background-color: blueviolet;
+    border-radius: 50%;
+    display: inline-block;
+    transition: background-color 0.6s ease;
+}
+
+ .active, .dot:hover {
+  background-color: #717171;
+}
+.actives, .dota:hover {
+    background-color: #717171;
+}
+/* Fading animation */
+.fade {
+  -webkit-animation-name: fade;
+  -webkit-animation-duration: 1.5s;
+  animation-name: fade;
+  animation-duration: 1.5s;
+}
+
+@-webkit-keyframes fade {
+  from {opacity: .4} 
+  to {opacity: 1}
+}
+
+@keyframes fade {
+  from {opacity: .4} 
+  to {opacity: 1}
+}
+/**************tabEnd**************/
+/* Style the tab content */
+
+/*********Features Section**********/
+.softwareFeatures {
+    margin: 50px auto;
+    height: auto;
+    background-color: whitesmoke;
+    font-family: sans-serif;
+}
+   
+    .mainAppFeatures {
+        display: flex;
+        justify-content: space-around;
+        flex-wrap: wrap;
+        width: 90%;
+        margin-left: auto;
+        margin-right: auto;
+        margin-bottom: 50px
+    }
+    .mainAppFeatures .Service
+    {
+        margin-top:50px;
+    }
+    .mainAppFeatures .featureSummary
+    {
+        display:flex;
+        align-items:center;
+    }
+        .mainAppFeatures .featureSummary ul
+        {
+            width:80vh;
+        }
+        .mainAppFeatures .featureSummary ul li {
+            display: flex;
+            margin-bottom: 10px;
+        }
+        .mainAppFeatures .featureSummary .fa-laptop {
+            color: darkslateblue;
+            font-size: 50px;
+           margin-right:10px;
+            box-shadow: 0px 10px 10px #aaaaaa;
+        }
+        .mainAppFeatures .featureSummary ul li i {
+            font-size: 10px;
+            color: blueviolet;
+        }
+        .mainAppFeatures .featureSummary ul li h3 {
+            color:rebeccapurple;
+        }
+            .mainAppFeatures .featureSummary  h4, h5
+            {
+                color:darkkhaki;
+            }
+        
+            .mainAppFeatures .Service .fas fa-laptop {
+                font-size: 40px;
+                color: blue;
+                font-weight: 600;
+            }
+.Feature1 {
+    text-align: center;
+    height: 55vh;
+    padding: 30px 20px;
+    margin-bottom: 1.5rem;
+    margin-top:1.5rem;
+    border-radius: 5px;
+    width: 40vh;
+    box-shadow: 0px 0px 10px gray;
+    background-color: white;
+    
+}
+        .Feature1:hover {
+            cursor: pointer;
+            transform: scale(0.8, 1.1);
+            background-color:aliceblue;
+       
+    }
+
+    .Feature1 .fas {
+        margin: 0 auto;
+        font-size: 35px;
+        text-align: center;
+        line-height: 60px;
+        width: 60px;
+        border-radius: 50%;
+        color:royalblue;
+        background-color:silver;
+    }
+
+.Feature1 h3 {
+    margin: 1rem 0;
+    line-height: 1rem;
+    padding-top: 10px;
+    padding-bottom: 10px;
+    border-top-width: 2rem;
+    border-top: 5px solid silver;
+    border-bottom: 5px solid gray;
+}
+
+    .Feature1 p {
+        height: auto;
+        font-family: Georgia;
+        font-size: 17px;
+        text-align: justify;
+        margin-top: 0px;
+    }
+           /***********End of Features*************8*/
+
+/*********************ClientPAge********888*/
+.clientsPage
+{
+    margin-right:auto;
+    margin-left:auto;
+    width:80%;
+}
+    .clientsPage .Service {
+        text-align: center;
+        height: auto;
+        margin-top: 2rem;
+        margin-bottom: 1.5rem;
+    }
+.subClientPages {
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content:space-around;
+    height: auto;
+    background-color: white;
+    width: 100%;
+}
+
+    .clientsPage .Service img{
+        width:100px;
+        height:80px;
+    }
+.subClientPages .clients {
+    width: 200px;
+    height: 200px;
+    text-align: center;
+    color: darkslateblue;
+    margin-top: 10px;
+   
+}
+.clients img {
+   
+    box-shadow: 0px 10px 10px #aaaaaa;
+    width:100px;
+    height:100px;
+}
+/***************What We Do*******888*/
+.WhatDo {
+   
+    overflow: hidden;
+    background-color: whitesmoke;
+    height: auto;
+    padding: 0;
+    margin-top: 5px;
+   
+}
+    .WhatDo .subWhatDo {
+        width: 80%;
+        margin-top:1.5rem;
+        margin-left: auto;
+        margin-right: auto;
+        display: flex;
+        flex-wrap:wrap;
+        justify-content: space-between;
+        font-family: 'Teko', sans-serif;
+
+    }
+.WhatDo .Service {
+    text-align: center;
+    height: auto;
+    margin-top:3.5rem;
+    font-size:45px;
+    margin-bottom: 1.5rem;
+    width: 25%;
+}
+        .WhatDo .Service img {
+            box-shadow: 0px 10px 10px #aaaaaa;
+            border-radius:50%;
+        }
+    .WhatDo .whatDoDetails {
+        width: 65%;
+        font-family: 'Teko', sans-serif;
+        padding: 10px 0;
+        color: darkolivegreen;
+        font-weight:lighter;
+        height:auto;
+    }
+    
+    .WhatDo ul li{
+        list-style:none;
+        
+        padding:10px 10px;
+    }
+        .WhatDo ul li a{
+            color:orangered;
+        }
+        .WhatDo .whatDoDetails .fas {
+            font-size: 10px;
+            text-align: center;
+            color: antiquewhite;
+            font-weight: 900;
+            line-height: 15px;
+            width: 15px;
+            background-color: yellowgreen;
+            border-radius: 50%;
+            margin-right: 10px;
+        }
+
+/***********ContactPage**************/
+.wholeContactPage
+{
+    width:80%;
+    height:auto;
+    margin-left:auto;
+    margin-right:auto;
+    margin-top:2.5rem;
+    display:flex;
+    align-items:center;
+    justify-content:space-around;
+    flex-wrap:wrap;
+}
+.ContactPage {
+    background-color: black;
+    color: white;
+    width: 33%;
+    height: 65vh;
+    padding: 30px;
+}
+    .ContactPage .contacts
+    {
+        height:15vh;
+        width:95%;
+       
+    }
+    .ContactPage .contacts span{
+        margin-bottom:10px;
+    }
+    .ContactPage .contacts hr {
+       
+        width: 40vh;
+        border: 2px solid white;
+        border-radius: 5px
+    }
+.ContactPage i {
+    font-size: 30px;
+    color: green;
+    font-weight: bolder
+}
+/*************Get In Touch******/
+.contact {
+    width: 60%;
+    display: flex;
+    flex-direction: column;
+    padding: 20px;
+}
+.ContactInputs {
+    display: flex;
+    width: 100%;
+    flex-wrap: wrap;
+    border-radius: 5px;
+    
+}
+
+.ContactInputs input[type=text] {
+    width: 45%;
+    padding: 12px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    resize: vertical;
+    margin-right: 10px;
+    margin-bottom: 15px;
+}
+textarea {
+    width: 91.5%;
+    height: 30vh;
+}
+input[type=submit] {
+    background-color:royalblue;
+    color: white;
+    margin-top: 10px;
+    padding: 12px 20px;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+}
+
+    input[type=submit]:hover {
+        background-color: #45a049;
+    }
+   
+    /****************Animation Class**********8*/
+    .reveal {
+        position: relative;
+        opacity: 0;
+    }
+
+    .reveal.active {
+        opacity: 1;
+    }
+
+.active.fade-bottom {
+    animation: fade-bottom 1s ease-in;
+}
+
+.active.fade-left {
+    animation: fade-left 1s ease-in;
+}
+
+.active.fade-right {
+    animation: fade-right 1s ease-in;
+}
+.active.fade-top {
+    animation: fade-top 1s ease-in;
+}
+
+@keyframes fade-bottom {
+    0% {
+        transform: translateY(50px);
+        opacity: 0;
+    }
+
+    100% {
+        transform: translateY(0);
+        opacity: 1;
+    }
+}
+
+@keyframes fade-left {
+    0% {
+        transform: translateX(-100px);
+        opacity: 0;
+    }
+
+    100% {
+        transform: translateX(0);
+        opacity: 1;
+    }
+}
+
+@keyframes fade-right {
+    0% {
+        transform: translateX(100px);
+        opacity: 0;
+    }
+
+    100% {
+        transform: translateX(0);
+        opacity: 1;
+    }
+
+}
+
+@keyframes fade-top {
+    0% {
+        transform: translateY(-50px);
+        opacity: 0;
+    }
+
+    100% {
+        transform: translateY(0);
+        opacity: 1;
+    }
+}
+/****Footer Page****/
+footer {
+    background-color: ThreeDHighlight;
+    opacity: 0.7;
+    max-width: 100%;
+    margin-top: 80px;
+}
+.footContainer .newsLetter {
+    position: relative;
+    width: 60%;
+    overflow:hidden;
+    margin-left: auto;
+    margin-right: auto;
+    color: aliceblue;
+    display: flex;
+    transform: translateY(-30px);
+    justify-content: flex-start;
+    text-align: center;
+    background-color: ThreeDHighlight;
+    box-shadow: 0px 5px 20px rgba(0,0,0,0.1);
+    border-radius: 50px;
+    padding: 20px 50px;
+}
+    .footContainer .newsLetter h3 {
+        width: 40%;
+    }
+.footContainer .emailPortion {
+    width: 70%;
+}
+.footContainer .newsLetter input[type=text] {
+    width: 80%;
+    height: 35px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    resize: vertical;
+    margin-left: 10px;
+}
+.footContainer .newsLetter button {
+    position: absolute;
+    right: 0;
+    margin-right: 50px;
+    padding: 10px 10px;
+    background-color: #0e8ce4;
+    font-weight: bolder;
+    color: white;
+    border: none;
+    outline: none;
+    border-top-right-radius: 5px;
+    border-bottom-right-radius: 5px;
+    cursor: pointer;
+}
+
+.footContainer .foot {
+    height: 50vh;
+    display: flex;
+    overflow: hidden;
+    transform: translateY(-50px);
+    justify-content: space-between;
+    align-items: center;
+    margin: 10px 30px;
+}
+.foot i {
+    color: crimson;
+    font-size: 25px;
+}
+.foot p
+{
+   margin-bottom:15px;
+
+}
+.foot a{
+    text-decoration:none;
+        color:white;
+        margin-left:10px;
+        width:100px;
+}
+.foot .col1 i{
+    margin-right:5px;
+    width:20px
+}
+
+
+.footerLogo {
+    display: flex;
+    align-items: center;
+    justify-content: flex-start;
+}
+.footerLogo {
+    text-decoration: none;
+    font-weight:bolder;
+    font-size: 25px;
+    font-family: 'Agency FB';
+    
+}
+    .footerLogo img {
+        
+        width: 60px;
+        text-align: center;
+        border-radius: 50%;
+    }
+.pdfFooter h3 {
+    color: aliceblue;
+    padding: 10px 0;
+    margin-bottom:10px;
+    border-bottom: 2px solid crimson;
+}
+.footerVideos h3 {
+    color: aliceblue;
+    padding: 10px 0;
+    margin-bottom: 10px;
+    border-bottom: 2px solid crimson;
+}
+.pdfFooter .firstColumn
+{
+    display:flex;
+}
+.footerLastPage {
+    margin-top: 10px;
+    text-align: center;
+    color: darkolivegreen;
+    font-weight:bolder;
+    background-color: antiquewhite
+}
+
+.lastFooterPage h4
+{
+    padding: 15px 0;
+}
+.lastFooterPage i {
+    background-color:lightcyan;
+    line-height:50px;
+    width:50px;
+    font-size:25px;
+    text-align:center;
+    border-radius:50%;
+}
+/************Footer End*************/
+
+/***********Moblie View*************/
+@media (min-width:320px) and (max-width: 767px) {
+    body {
+        width: 100%;
+    overflow-x: hidden;
+    margin:0;
+    }
+
+    .navbar {
+        display: flex;
+        flex-wrap: nowrap;
+        width: 100%;
+        justify-content: space-between;
+        position: relative;
+    }
+
+    .menu {
+        font-size: 20px;
+        display: block;
+        text-align: center;
+        background-color: white;
+        height: 30px;
+        width: 30px;
+        padding-top: 2px;
+        position: absolute;
+        right: 0;
+    }
+
+    .menuBar {
+        display: none;
+        position: absolute;
+        right: 0;
+        top: 10px;
+    }
+    .menuBars {
+        position: absolute;
+        right: 30px;
+        
+    }
+        .menuBars button {
+            border-radius: 10px;
+            font-size: 12px;
+        }
+            .navbar ul {
+            flex-direction: column;
+            justify-content: center;
+            height: 180px;
+            width: 80px;
+            background-color: white;
+            margin: 0px 0px;
+        }
+
+        .navbar ul li {
+            padding: 5px 0px;
+        }
+
+            .navbar ul li a {
+                text-decoration: none;
+                font-weight: bolder;
+                font-size: 20px;
+                background-color: white;
+                font-family: 'Agency FB';
+                border-radius: 0px;
+                color: #333;
+                cursor: pointer;
+                padding: 0px 4px;
+                border-bottom: 1px solid #fff;
+                transition: background .4s;
+            }
+
+    .navbar .logo {
+        margin-bottom: 5px;
+    }
+    .navbar .logo a{
+        font-size:20px;
+    }
+    /* The Modal (background) */
+    .modal {
+        
+        width: 80%; /* Full width */
+       
+    }
+    /***********Banner Area************/
+    .bannerArea h1 {
+        font-size: 20px;
+    }
+    /**************About Us*********/
+    .AboutUS {   
+        width: 90%;
+    }
+    
+    .AboutUS .AboutUSText {
+        width:100%;
+        padding:5px 10px;
+        margin-bottom:5px;
+        border-radius:10px;
+    }
+        .AboutUS .AboutUSText h1 {
+            margin-bottom: 15px;
+            font-size: 25px
+        }
+    .AboutUS .AboutUSText p {
+        font-size: 15px;
+       line-height:25px
+    }
+
+        .AboutUS .AboutUSImage {
+            width: 100%;
+        }
+
+        .AboutUS .AboutUSImage img {
+            width: 100%;
+            height: 30vh
+        }
+        /***********Services Section*******/
+    #section2 {
+        padding: 0 5px;
+    }
+    .Services {
+        flex-direction: column;
+    }
+
+    .Service {
+        height: auto;
+    }
+    /*************Tab Button**********/
+    .tabButton {
+        display: flex;
+        flex-wrap: wrap;
+        width: 100%;
+    }
+
+        .tabButton .tablinks {
+            position: relative;
+            width: 100%;
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+            border-radius: 10px;
+        }
+
+            .tabButton .tablinks .tabHeader {
+                display: flex;
+                justify-content: flex-start;
+                align-items: center;
+                width: 300px;
+                margin-left: 0;
+            }
+
+            .tabButton .tablinks i {
+                font-size: 20px;
+                margin-left: 10px;
+                width: 25px;
+            }
+
+            .tabButton .tablinks img {
+                width: 25px;
+                height: 25px;
+                margin-left: 10px;
+            }
+
+            .tabButton .tablinks h2 {
+                margin-left: 10px;
+                font-size: 15px;
+            }
+
+            .tabButton .tablinks .tabHeader:after {
+                position: absolute;
+                content: '\02795'; /* Unicode character for "plus" sign (+) */
+                font-size: 13px;
+                color: #777;
+                right: 0;
+                margin-left: 5px;
+            }
+    /**********Tab Content*******/
+    .tabcontentBody {
+        width: 100%;
+        flex-wrap: wrap;
+        height: auto;
+        overflow: hidden;
+        padding: 0 18px;
+        margin-top: -10px;
+    }
+
+        .tabcontentBody .leftDiv {
+            width: 100%;
+        }
+
+            .tabcontentBody .leftDiv p {
+                font-size: 15px;
+            }
+
+            .tabcontentBody .leftDiv ul li a {
+                font-size: 15px;
+            }
+
+        .tabcontentBody .rightDiv {
+            width: 100%;
+            margin: 0;
+        }
+
+            .tabcontentBody .rightDiv img {
+                width:100%;
+                height:50vh;
+            }
+
+    /***********Software Features**********/
+    .softwareFeatures .mainAppFeatures {
+        height: auto;
+        margin-top: -20px;
+    }
+
+    .mainAppFeatures .Service {
+        margin-top: 10px;
+    }
+        .mainAppFeatures .Service h2 {
+            font-size:25px;
+        }
+        .mainAppFeatures .Service .featureSummary .fa-laptop {
+            font-size:30px;
+        }
+        .mainAppFeatures .Service ul li {
+            font-size: 15px;
+        }
+        .softwareFeatures .mainAppFeatures .Feature1 h3 {
+            font-size: 15px;
+        }
+    .softwareFeatures .mainAppFeatures .Feature1 p{
+        text-align:justify;
+    }
+    .softwareFeatures .mainAppFeatures .Feature1 {
+        height: auto;
+        width: 50vh;
+        margin-bottom: 0.5rem;
+    }
+    
+        /***************clientsPage******/
+    .clientsPage {
+        width: 95%;
+    }
+        .clientsPage .clients {
+        margin-top: 0px;
+        height: 170px;
+    }
+
+    .subClientPages .clients {
+        width: 150px;
+        margin-bottom:1.5rem;
+    }
+    /***********What we do differently**************/
+    .WhatDo{
+        margin-top:0;
+    }
+        .WhatDo .subWhatDo .Service {
+            margin-top:0;
+        }
+            .WhatDo .Service {
+        width: 100%;
+    }
+
+    .WhatDo .whatDoDetails {
+        width: 100%;
+    }
+
+    /**************ContactPage**********/
+    .wholeContactPage {
+        display: flex;
+        margin-top: 0.5rem;
+        flex-direction: column-reverse;
+    }
+
+        .wholeContactPage .ContactPage {
+            background-color: black;
+            color: white;
+            width: 90%;
+            height: auto;
+            padding: 30px;
+        }
+
+    .ContactPage .contacts {
+        height: 18vh;
+    }
+
+        .ContactPage .contacts hr {
+            width: 45vh;
+        }
+
+    .wholeContactPage .contact {
+        width: 100%;
+    }
+    .ContactInputs input[type=text] {
+        width: 100%;
+    }
+    textarea {
+        width: 100%;
+        height: 20vh;
+    }
+    /************NewsLetter***********/
+    .footContainer .newsLetter {
+        width: 85%;
+        flex-wrap: wrap;
+        padding: 0px 50px;
+    }
+
+        .footContainer .newsLetter h3 {
+            width: 100%;
+            font-size: 15px;
+        }
+
+    .footContainer .emailPortion {
+        width: 100%;
+    }
+    /***********Footer***********888*/
+    .footContainer .foot {
+        width: 60%;
+        margin-left: auto;
+        margin-right: auto;
+        margin-top:20px;
+        justify-content: center;
+        flex-wrap: wrap;
+        height: auto;
+    }
+
+        .footContainer .foot .footerLogo {
+            width: 100%;
+            display:none;
+        }
+
+        .footContainer .foot .pdfFooter {
+            width: 100%;
+        }
+
+        .footContainer .foot .footerVideos {
+            width: 100%;
+        }
+}
+/***************Tablet View***************/
+@media (min-width:768px) and (max-width: 1200px) {
+    /*********************Header************/
+    body{
+        overflow-x:hidden;
+    }
+    .navbar {
+        display: flex;
+       
+        height:auto;
+    }
+        .navbar .logo {
+            margin-bottom: 10px;
+            
+        }
+            .navbar .logo img {
+                line-height: 30px;
+                width: 30px;
+            }
+            .navbar .logo a {
+                font-size: 20px;
+            }
+        .navbar ul {
+            
+            margin: 0px 0px;
+        }
+        .navbar ul li {
+            padding: 0px 5px;
+        }
+        .navbar ul li {
+            
+        }
+            .navbar ul li a {
+                font-size: 18px;
+            }
+                .navbar .menuBar {
+            margin-bottom: 5px;
+
+        }
+
+            /********BANNER AREA*******/
+            .bannerArea {
+        height: auto;
+    }
+                .bannerArea h1 {
+                    
+                    font-size: 30px;
+                    font-weight: 900;
+                }
+    /************ABOUT US*********/
+    #section1 {
+        width:100%;
+    }
+    .Container h1 {   
+        font-size: 28px;
+    }
+    .AboutUS .AboutUSText {
+        width: 50%;
+        margin-right:10px;
+        padding: 5px 5px;
+        border-radius: 10px;
+    }
+    .AboutUS .AboutUSText p {
+        width: 95%;
+        margin-bottom: 5px;
+        font-size: 15px;
+    }
+    .AboutUS .AboutUSImage {
+        width: 40%;
+    }
+    .AboutUS .AboutUSImage img{
+        width: 100%;
+        
+    }   
+    /****Tab Button**********/
+        .tabButton {
+        width: 100%;
+    }
+
+        .tabButton .tablinks {
+            width: 25%;
+            margin-right:5px;
+            padding:0 2px;
+        }
+                .tabButton .tablinks .tabHeader h2 {
+                    margin-left: 5px;
+                }
+            .tabButton .tablinks .tabHeader {
+                display: flex;
+                justify-content: flex-start;
+                align-items: center;
+                width: 300px;
+                font-size:10px;
+                margin-left: 0;
+            }
+
+        .tabButton img {
+            width: 25px;
+            height: 25px;
+        }
+
+        .tabButton i {
+            font-size: 20px;
+        }
+    /****************tabContent Contents************/
+    .tabcontentBody {
+        margin-top:0px;
+    }
+
+    .tabcontent .leftDiv {
+        width: 100%;
+        font-size: 15px;
+    }
+    .tabcontent .rightDiv {
+        width: 100%;
+        text-align: center;
+    }
+    /*********Features Section**********/
+    .softwareFeatures {
+        margin: 10px auto;
+    }
+        .Feature1 {  
+        height:auto; 
+        
+    }
+        .Feature1 h3 {
+            font-size:15px;
+        }
+        .Feature1 p {
+            line-height:20px;
+            font-size: 15px;
+            text-align:start;
+           
+        }
+    /***********End of Features*************8*/
+
+    /*********************ClientPAge********888*/
+
+    /***************What We Do*******888*/
+    .WhatDo{
+        width:98%;
+        margin-right:auto;
+        margin-left:auto;
+    }
+    .WhatDo .Service {
+        font-size: 35px;
+    }
+        .WhatDo ul li {
+            line-height:20px;
+        }
+    /***********ContactPage**************/
+    
+    .wholeContactPage {
+        width: 98%;
+    }
+    .ContactPage {
+        
+        width: 35%;
+        font-size:15px;
+        padding: 10px;
+    }
+    /*************Get In Touch******/
+    .contact {
+        padding: 10px;
+    }
+    .ContactPage .contacts hr {
+        width: 45vh;
+       
+    }
+    /****Footer Page****/
+    footer {
+        background-color: ThreeDHighlight;
+        opacity:1;
+        margin-top: 30px;
+    }
+    .footContainer {
+        width: 100%;
+        
+    }
+    .footContainer .newsLetter {
+        width: 80%;
+        margin-top:50px;
+        
+    }
+
+            .footContainer .newsLetter h3 {
+                font-size: 15px;
+            }
+
+        .footContainer .foot {
+            height: auto;
+            
+        }
+
+        .footContainer .footerLogo {
+            display: none;
+        }
+
+        .footContainer .pdfFooter p {
+            font-size: 15px;
+        }
+    .pdfFooter h3 {
+        margin-top: 0px;
+    }
+    .footContainer .footerVideos h3{
+        margin-top: 0px;
+    }
+    .footContainer .footerVideos p {
+        font-size: 15px;
+    }
+
+    .footerLastPage {
+    }   
+    }
+      

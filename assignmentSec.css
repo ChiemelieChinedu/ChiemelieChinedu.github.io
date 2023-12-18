@@ -1,0 +1,398 @@
+.firstPage {
+    margin-top: 50px;
+}
+
+.subFirstPage
+{
+display:flex;
+align-items:flex-start;
+justify-content:space-around;
+width:85%;
+
+}
+.subFirstPage .firstText
+{
+    width:50%;
+}
+    .subFirstPage h1 {
+        font-size: 35px;
+        font-family: 'Open Sans', sans-serif;
+        font-weight: bolder;
+        margin-bottom: 20px;
+        color: cadetblue;
+    }
+    .subFirstPage p{
+        line-height:23px;
+        font-size:17px;
+        margin-bottom:20px;
+    }
+    .subFirstPage button
+    {
+        padding:15px;
+        font-size:15px;
+        font-weight:bolder;
+        background-color:darkgreen;
+        color:white;
+    }
+    .subFirstPage .chartImage img {
+        margin-top:-30px;
+        height: 350px;
+        width: 400px;
+    }
+   
+    /********************Second Page**********/
+    .secPage {
+        width: 100%;
+        background-color: whitesmoke;
+        margin-top: 50px;
+    }
+.subSecPage {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 98%;
+    margin-left: auto;
+    margin-right: auto;
+    padding-bottom: 50px;
+}
+    .subSecPage .PageImage {
+        margin-top: 20px;
+        padding-left: 10px;
+        width: 55%;
+    }
+    .subSecPage .pageText {
+        margin-top: 20px;
+        width: 45%;
+        padding-right: 10px;
+    }
+        .subSecPage .pageText h2 {
+            margin-bottom: 30px;
+        }
+    .subSecPage .PageImage img {
+        border-top-right-radius: 50px;
+        height: 60vh;
+        width: 105vh;
+    }
+
+.subSecPage .pageText ul {
+    list-style: none;
+    margin-top: 10px;
+}
+
+    .subSecPage .pageText ul li {
+        text-decoration: none;
+        font-family: Georgia, 'Times New Roman', Times, serif;
+        font-weight: 200;
+        color: darkslateblue
+    }
+
+
+        .subSecPage .pageText  i {
+            color: white;
+            margin-right: 1rem;
+            margin-bottom: 1rem;
+            text-align: center;
+            line-height: 0.5rem;
+            width: 1rem;
+            border-radius: 50%;
+            background-color: palevioletred;
+        }
+        /***************ThirdPage**************/
+.thirdPage {
+    width: 100%;
+    margin-top: 50px;
+}
+    .thirdPage .subthirdPage
+    {
+        padding-top:50px;
+    }
+
+        .thirdPage .subthirdPage .mySlides2 {
+            display: none;
+            width: 98%;
+            justify-content: center;
+            margin-left: auto;
+            margin-right: auto;
+        }
+            .thirdPage .subthirdPage .mySlides2 .text {
+                width:40%;
+            }
+                .thirdPage .subthirdPage .mySlides2 .text h3 {
+                    font-family: Verdana;
+                    margin-bottom: 25px;
+                }
+                .thirdPage .subthirdPage .mySlides2 .text p {
+                    color: darkslategray;
+                    padding-right: 50px;
+                    padding-left: 10px;
+                    padding-bottom: 10px;
+                    font-family: Georgia;
+                    font-weight: bolder;
+                    font-size: 15px;
+                    line-height: 20px;
+                    text-align: justify;
+                }
+                .thirdPage .subthirdPage .mySlides2 .text button {
+                    margin-top: 50px;
+                    padding: 15px;
+                    font-size: 15px;
+                    font-weight: bolder;
+                    border-radius: 10px;
+                    background-color: darkgreen;
+                    color: white;
+                }
+            .thirdPage .subthirdPage .mySlides2 .image {
+                width: 58%;
+            }
+                .thirdPage .subthirdPage .mySlides2 .image img {
+                    box-shadow: 0px 10px 10px #aaaaaa;
+                    border-top-right-radius: 50px;
+                    height: 65vh;
+                    width: 120vh
+                }
+        .thirdPage .dotCircles {
+            padding: 25px 0;
+            text-align: center;
+           
+        }
+
+/***************FourthPage**************/
+.fourthPage {
+    width: 100%;
+    background-color: whitesmoke;
+    height: auto;
+}
+
+.subfourthPage {
+    width: 98%;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    flex-wrap: wrap;
+}
+
+.subfourthImage {
+    width: 45%;
+    margin: 25px 10px;
+    text-align: center;
+}
+
+    .subfourthImage img {
+        box-shadow: 0px 10px 10px #aaaaaa;
+        border-top-right-radius: 50px;
+        height: 45vh;
+        width: 90vh;
+        margin-bottom: 10px
+    }
+/*******fOOTER*******/
+.footerIframe iframe{
+    height: 580px;
+}
+/***********Moblie View*************/
+@media (min-width:320px) and (max-width: 767px) {
+    body {
+        width: 100%;
+        overflow-x: hidden;
+    }
+    .firstPage {
+        margin-top:0px;
+    }
+
+    .subFirstPage {
+        display: flex;
+        flex-direction: column;
+        width: 100%;
+        padding: 15px;
+    }
+        .subFirstPage .firstText {
+            width: 100%;
+            
+        }
+        .subFirstPage h1 {
+            font-size: 25px;  
+        }
+        .subFirstPage p {
+            text-align:justify;
+            
+        }
+        .subFirstPage .chartImage {
+            margin-top:45px;
+            width: 100%;
+            text-align: center
+        }
+        /**************SecondPage**********/
+    .subSecPage {
+        display: flex;
+        flex-direction: column-reverse;
+    }
+
+    .secPage .subSecPage .PageImage {
+        margin-top: 20px;
+        padding-left: 0px;
+        width: 98%;
+    }
+
+    .secPage .subSecPage .pageText {
+        margin-top: 20px;
+        width: 98%;
+        padding-right: 0px;
+        padding-left: 5px;
+    }
+
+    .secPage .subSecPage .PageImage img {
+        padding:0;
+        margin:0;
+        height: 60vh;
+        width: 100%;
+    }
+    /***************ThirdPage**************/
+    .thirdPage {
+        margin-top: 0px;
+    }
+
+        .thirdPage .subthirdPage .mySlides2 {
+            flex-direction: column;
+        }
+
+            .thirdPage .subthirdPage .mySlides2 .text {
+                width: 98%;
+            }
+
+                .thirdPage .subthirdPage .mySlides2 .text p {
+                    padding-right: 0px;
+                }
+
+                .thirdPage .subthirdPage .mySlides2 .text button {
+                    margin-top: 10px;
+                    padding: 10px;
+                    font-size: 12px;
+                }
+
+            .thirdPage .subthirdPage .mySlides2 .image {
+                width: 98%;
+                padding-top: 20px;
+            }
+
+                .thirdPage .subthirdPage .mySlides2 .image img {
+                    height: 50vh;
+                    width: 100%;
+                }
+    /****************FourthPage***********/
+    .subfourthImage {
+        width: 98%;   
+    }
+        .subfourthImage img {
+            height:40vh;
+            width: 100%;
+            margin-bottom: 10px
+        }
+        /*******fOOTER*******/
+    .footerIframe iframe {
+        height: 850px;
+    }
+}
+@media (min-width:768px) and (max-width: 1200px) {
+    /*********************Header************/
+    body {
+        width: 100%;
+        overflow-x: hidden;
+        margin:0;
+    }
+
+    .firstPage {
+        margin-top: -50px;
+    }
+
+    .subFirstPage {
+        flex-direction: column;
+        width: 100%;
+        padding: 15px;
+    }
+
+        .subFirstPage .firstText {
+            width: 100%;
+        }
+
+        .subFirstPage h1 {
+            font-size: 30px;
+        }
+
+        .subFirstPage p {
+            text-align: justify;
+        }
+
+        .subFirstPage .chartImage {
+            margin-top: 45px;
+            width: 100%;
+            text-align: center
+        }
+/****************SecondPage*********/
+    .secPage .subSecPage {
+        display: flex;
+        flex-direction: column-reverse;
+    }
+
+        .secPage .subSecPage .PageImage {
+            margin-top: 20px;
+            padding-left: 0px;
+            width: 98%;
+        }
+
+        .secPage .subSecPage .pageText {
+            margin-top: 20px;
+            width: 98%;
+            padding-right: 0px;
+            padding-left: 15px;
+        }
+
+        .secPage .subSecPage .PageImage img {
+            border-top-right-radius: 50px;
+            height: 60vh;
+            width:100%;
+        }
+
+    /***************ThirdPage**************/
+    .thirdPage {
+        margin-top: 0px;
+    }
+
+        .thirdPage .subthirdPage .mySlides2 {
+            flex-direction: column;
+        }
+
+            .thirdPage .subthirdPage .mySlides2 .text {
+                width: 98%;
+            }
+
+                .thirdPage .subthirdPage .mySlides2 .text p {
+                    padding-right: 0px;
+                }
+
+                .thirdPage .subthirdPage .mySlides2 .text button {
+                    margin-top: 10px;
+                }
+
+            .thirdPage .subthirdPage .mySlides2 .image {
+                width: 98%;
+                padding-top: 20px;
+            }
+
+                .thirdPage .subthirdPage .mySlides2 .image img {
+                    height: 55vh;
+                    width: 100%
+                }
+
+                /****************FourthPage***********/
+    .subfourthImage {
+        width: 45%;
+        margin:0;
+    }
+        .subfourthImage img {
+            height: 45vh;
+            width: 70vh;
+        }
+    /*******fOOTER*******/
+    .footerIframe iframe {
+        height:525px;
+    }
+}

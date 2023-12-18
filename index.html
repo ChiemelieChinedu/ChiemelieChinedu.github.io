@@ -1,0 +1,739 @@
+﻿<!DOCTYPE html>
+
+<html lang="en" xmlns="http://www.w3.org/1999/xhtml">
+<head>
+    <meta charset="utf-8" />
+    <title></title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.12.1/css/all.min.css">
+    <meta name="description" content="Software Comapnies in Awka, Anambra State, Nigeria, Africa" />
+    <meta name="description" content="Software Companies in Nigeria" />
+    <meta name="keywords" content="Anambra Programming, Awka Software Company, Awka Engineering" />
+    <meta name="description" content="Software Companies in Anambra" />
+    <meta name="description" content="Software Companies in Afica" />
+    <meta name="description" content="Learn Programming in Awka, Anambra" />
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>proLessons Technology, a Software Engineering Company</title>
+    <link rel="icon" href="./bookIcon.ico" />
+    <link rel="stylesheet" type="text/css" href="assignment.css">
+</head>
+<body>
+    <div class="container" id="section">
+        <header>
+            <div class="navbar">
+                <div class="logo">
+                    <img src="./bookIcon.ico" alt="SiteLogo">
+                    <a href="#">proLessons_Technology</a>
+                </div>
+                <div id="nav" class="menuBar">
+                    <ul>
+                        <li><a href="#section">Home</a></li>
+                        <li><a href="#section1">About Us</a></li>
+                        <li><a href="#section2">Our Services</a></li>
+                        <li><a href="#section3">Contact Us</a></li>
+                    </ul>
+                </div>
+                <div class="menuBars">
+
+                    <div>
+                        <button class="btn1" id="myBtn">Log In</button>
+                        <div id="myModal" class="modal">
+                            <!-- Modal content -->
+                            <div class="modal-content">
+                                <span class="close">&times;</span>
+                                <h2>Login Form</h2>
+                                <div class="subModal">
+                                    <div class="imgClass">
+                                        <img src="./LoginLogo.jpg" alt="book missing" />
+                                    </div>
+                                    <div class="subModalText">
+                                        <div class="input-container">
+                                            <i class="fas fa-user-tie icons"></i>
+                                            <input id="txtUserName" class="input-field" placeholder="Username" type="text" />
+                                        </div>
+                                        <div class="input-container">
+                                            <i class="fa fa-key icons"></i>
+                                            <input type="password" id="txtPassword" class="input-field" placeholder="Password" />
+                                        </div>
+
+                                    </div>
+                                    <div class="imgClass2">
+                                        <img src="./M6hvZ.png" alt="book missing" />
+                                    </div>
+                                </div>
+                                    <input type="submit" value="Submit" class="btn" Text="Login" OnClick="Button2_Click">
+
+                                    <label ID="txtError" runat="server" BackColor="Red" ForeColor="White"></label>
+                                    <div>
+                                        <asp:CheckBox ID="chkRem" Text="Remember Me" runat="server" />
+                                    </div>
+                                </div>
+                        </div>
+                    </div>
+                    <div>
+                        <button class="btn1" id="myBtn2">Sign Up</button>
+                        <div id="myModal2" class="modal">
+                            <!-- Modal content -->
+                            <div class="modal-content">
+                                <span class="close">&times;</span>
+                                <h2>Registration Form</h2>
+                                <div class="input-container">
+                                    <input type="text" id="txtEmail" class="input-field" placeholder="Email" />
+                                </div>
+                                <div class="input-container">
+                                    <input type="password" id="txtPassword" class="input-field" placeholder="Password" />
+                                </div>
+                                <div class="input-container">
+                                    <input type="password" id="txtPassword" class="input-field" placeholder="ConfirmPassword" />
+                                </div>
+                                <input type="submit" value="Submit" class="btn" Text="Register" OnClick="Button2_Click">
+                                <label ID="txtError" runat="server" BackColor="Red" ForeColor="White"></label>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                
+                <script>
+                    // Get the modal
+                    var modal = document.getElementById("myModal");
+                    var modal2 = document.getElementById("myModal2");
+                    // Get the button that opens the modal
+                    var btn = document.getElementById("myBtn");
+                    var btn2 = document.getElementById("myBtn2");
+                    // Get the <span> element that closes the modal
+                    var span = document.getElementsByClassName("close")[0];
+                    var span2 = document.getElementsByClassName("close")[1];
+
+                    // When the user clicks on the button, open the modal
+                    btn.onclick = function () {
+                        modal.style.display = "block";
+                    }
+                    btn2.onclick = function () {
+                        modal2.style.display = "block";
+                    }
+
+                    // When the user clicks on <span> (x), close the modal
+                    span.onclick = function () {
+                        modal.style.display = "none";
+                    }
+                    span2.onclick = function () {
+                        modal2.style.display = "none";
+                    }
+                    // When the user clicks anywhere outside of the modal, close it
+                    window.onclick = function (event) {
+                        if (event.target == modal || event.target == modal2 ) {
+                                modal.style.display = "none";
+                                modal2.style.display = "none";
+                            }
+                        }
+                </script>
+
+                <p class="menu"><a href="javascript:void(0);" onclick="clickfunction()"><i class="fa fa-bars"></i></a></p>
+            </div>
+    </header>
+    <div class="bannerArea">
+        <div class="bannerImage"></div>
+        <h1>Software Engineering Company</h1>
+        <h3>We design any kind of Enterprise Software</h3>
+        <a href="#section3">Send Us a Message</a>
+    </div>
+    </div>
+    <div class="Container" id="section1">
+        <div class="AboutUS">
+            <div class="AboutUSText">
+                <h1>Who we are</h1>
+                <p>
+                    This company was founded so as to help small scale African businesses that cannot afford to spend millions of dollars to acquire an enterprice software for the management of their institutions. we have no real competitors and our main
+                    aim is to simplify complex software installation and deployment processes
+                </p>
+            </div>
+            <div class="AboutUSImage">
+                <img src="./About.jpg" alt="book missing" height="300" width="500" />
+            </div>
+
+        </div>
+    </div>
+    <div class="Container" id="section2">
+        <div class="Service">
+            <h2>What We Offer</h2>
+        </div>
+        <div class="tabButton">
+            <button class="tablinks" onclick="loadTab(event, 'DesktopApp')" id="defaultOpen">
+                <div class="tabHeader">
+                    <i class="fas fa-desktop"></i>
+                    <h2>Desktop Applications</h2>
+                </div>
+            </button>
+            <button class="tablinks" onclick="loadTab(event, 'WebApp')">
+                <div class="tabHeader">
+                    <img src="./glo.png" alt="book missing" />
+                    <h2>Web Applications</h2>
+                </div>
+            </button>
+            <button class="tablinks" onclick="loadTab(event, 'MobileApp')">
+                <div class="tabHeader">
+                    <i class="fas fa-mobile-alt fa-lg"></i>
+                    <h2>Mobile Applications</h2>
+                </div>
+            </button>
+            <button class="tablinks" onclick="loadTab(event, 'DatabaseApp')">
+                <div class="tabHeader">
+                    <img src="./dataBaseIcon.jpg" alt="book missing" />
+                    <h2>Database Mgt</h2>
+                </div>
+            </button>
+        </div>
+    </div>
+    <!-- Tab content -->
+    <div id="DesktopApp" class="tabcontent">
+        <div class="tabcontentBody">
+            <div class="leftDiv">
+                <p>We design user friendly desktop applications with the use of C# Programming language and SQL Database Server</p>
+                <p>These applications are customized to run offline on desktop computers with windows operating systems. It is specically for institutions Internal Operations but it can also run online if needs be</p>
+                <ul>
+                    <li><a target="_blank" href="hotelSec.html"><i class="fas fa-chevron-right"></i>Hotel Management Software</a></li>
+                    <li><a target="_blank" href="pharmacysec.html"><i class="fas fa-chevron-right"></i>Pharmacy Management Software</a></li>
+                    <li><a target="_blank" href="retailstore.html"><i class="fas fa-chevron-right"></i>Point of Sales/Business Accounting Software</a></li>
+                    <li><a target="_blank" href="Library.html"><i class="fas fa-chevron-right"></i>Library Management Software</a></li>
+                    <li><a target="_blank" href="schoolAccounting.html"><i class="fas fa-chevron-right"></i>School Accounting Software</a></li>
+                    <li><a target="_blank" href="employeemgt.html"><i class="fas fa-chevron-right"></i>Employee Management Software</a></li>
+                    <li><a target="_blank" href="cbt.html"><i class="fas fa-chevron-right"></i>Computer Based Test(CBT)</a></li>
+                    <li><a target="_blank" href="resultcomputation.html"><i class="fas fa-chevron-right"></i>Result Computation and analysis for Schools</a></li>
+                    <li><a onclick="showAlerts()"><i class="fas fa-chevron-right"></i>Hospital Management Software</a></li>
+                    <li><a onclick="showAlertss()"><i class="fas fa-chevron-right"></i>Data Capturing Software</a></li>
+                    <li><a onclick="showAlert()"><i class="fas fa-chevron-right"></i>Advanced School Management Software</a></li>
+                    <li><a onclick="showAlertz()"><i class="fas fa-chevron-right"></i>Attendance Management Software</a></li>
+                    <li><a onclick="showAlertz()"><i class="fas fa-chevron-right"></i>Bulk Email Sending Software</a></li>
+                </ul>
+            </div>
+            <div class="rightDiv">
+                <div class="mySlides fade">
+                    <img src="./HotelDesktopCapture.jpg" alt="pictures not available" />
+                    <div class="text">Hotel Management Software</div>
+                </div>
+                <div class="mySlides fade">
+                    <img src="./PhamarcyDesktopCapture.jpg" alt="pictures not available" />
+                    <div class="text">Pharmacy Management Software</div>
+                </div>
+                <div class="mySlides fade">
+                    <img src="./BusinessMgtCapture.jpg" alt="pictures not available" />
+                    <div class="text">
+                        Point of Sales/Accounting Software
+                    </div>
+                </div>
+                <div class="mySlides fade">
+                    <img src="./LibraryBooksDisplay.jpg" alt="pictures not available" />
+                    <div class="text">
+                        Library Management Software
+                    </div>
+                </div>
+                <div class="mySlides fade">
+                    <img src="./LorretoAccounts.jpg" alt="pictures not available" />
+                    <div class="text">
+                        School Accounting Software
+                    </div>
+                </div>
+                <div class="mySlides fade">
+                    <img src="./DataCapturing.jpg" alt="pictures not available" />
+                    <div class="text">
+                        Employee Management Software
+                    </div>
+                </div>
+                <div class="mySlides fade">
+                    <img src="./CBTCapture.jpg" alt="pictures not available" />
+                    <div class="text">
+                        Online Quiz/Computer Based Test(CBT)
+                    </div>
+                </div>
+                <div class="mySlides fade">
+                    <img src="./ResultCompute.jpg" alt="pictures not available" />
+                    <div class="text">
+                        Result Computation Software
+                    </div>
+                </div>
+                <div class="mySlides fade">
+                    <img src="./HospitalMgt.png" alt="pictures not available" />
+                    <div class="text">
+                        Hospital Management Software
+                    </div>
+                </div>
+                <div class="mySlides fade">
+                    <img src="./bioMetricPix.jpg" alt="pictures not available" />
+                    <div class="text">
+                        Data Capturing(Biometric) Software
+                    </div>
+                </div>
+                <div class="mySlides fade">
+                    <img src="./AdvancedSchoolMgt.jpg" alt="pictures not available" />
+                    <div class="text">
+                        Data Capturing(Biometric) Software
+                    </div>
+                </div>  
+                <!-- The dots/circles -->
+                <div style="text-align:center; margin-top:10px;">
+                    <span class="dot" onclick="currentSlide(1)"></span>
+                    <span class="dot" onclick="currentSlide(2)"></span>
+                    <span class="dot" onclick="currentSlide(3)"></span>
+                    <span class="dot" onclick="currentSlide(4)"></span>
+                    <span class="dot" onclick="currentSlide(5)"></span>
+                    <span class="dot" onclick="currentSlide(6)"></span>
+                    <span class="dot" onclick="currentSlide(7)"></span>
+                    <span class="dot" onclick="currentSlide(8)"></span>
+                    <span class="dot" onclick="currentSlide(9)"></span>
+                    <span class="dot" onclick="currentSlide(10)"></span>
+                    <span class="dot" onclick="currentSlide(11)"></span>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div id="WebApp" class="tabcontent">
+        <div class="tabcontentBody">
+            <div class="leftDiv">
+                <h4>Web Applications</h4>
+                <p>We design all manner of Web applications with the use of ASP.NET Programming language and SQL Database Server</p>
+                <ul>
+                    <li><a onclick="showAlertz()"><i class="fas fa-chevron-right"></i>Hotel Booking and Reservation Website</a></li>
+                    <li><a onclick="showAlertz()"><i class="fas fa-chevron-right"></i>Portfolio Website</a></li>
+                    <li><a onclick="showAlertz()"><i class="fas fa-chevron-right"></i>Company Website</a></li>
+                    <li><a onclick="showAlertz()"><i class="fas fa-chevron-right"></i>Book Store</a></li>
+                    <li><a onclick="showAlertz()"><i class="fas fa-chevron-right"></i>School Accounting Software</a></li>
+                    <li><a onclick="showAlertz()"><i class="fas fa-chevron-right"></i>Library Management Software</a></li>
+                    <li><a onclick="showAlertz()"><i class="fas fa-chevron-right"></i>Computer Based Test(CBT)</a></li>
+                    <li><a onclick="showAlertz()"><i class="fas fa-chevron-right"></i>Result Computation and analysis for Schools</a></li>
+
+                </ul>
+            </div>
+            <div class="rightDiv">
+                <div class="mySlides2 fade">
+                    <img src="./hotelsCapture.jpg" alt="pictures not available" />
+                    <div class="text">Hotel Booking and Reservation Software</div>
+                </div>
+                <div class="mySlides2 fade">
+                    <img src="./portfolioCapture.jpg" alt="pictures not available" />
+                    <div class="text">Portfolio Website</div>
+                </div>
+                <div class="mySlides2 fade">
+                    <img src="./CompanySite.jpg" alt="pictures not available" />
+                    <div class="text">
+                        Company Website
+                    </div>
+                </div>
+                <div class="mySlides2 fade">
+                    <img src="./DashCapture.jpg" alt="pictures not available" />
+                    <div class="text">
+                        Company Website
+                    </div>
+                </div>
+                <!-- The dots/circles -->
+                <div style="text-align:center">
+                    <span class="dota" onclick="currentSlide(1)"></span>
+                    <span class="dota" onclick="currentSlide(2)"></span>
+                    <span class="dota" onclick="currentSlide(3)"></span>
+                    <span class="dota" onclick="currentSlide(4)"></span>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div id="MobileApp" class="tabcontent">
+        <p style="color:slategray; font-size:25px; font-weight:bolder">Only Available on Request</p>
+        <span onclick="this.parentElement.style.display='none'">x</span>
+    </div>
+    <div id="DatabaseApp" class="tabcontent">
+        <p style="color:slategray; font-size:25px; font-weight:bolder">Only Available on Request</p>
+        <span onclick="this.parentElement.style.display='none'">x</span>
+    </div>
+    <div class="softwareFeatures reveal fade-bottom">
+        <div class="mainAppFeatures">
+            <div class="Service">
+                <h2>General Application Features <i class="fa fa-gear fa-lg">&#xf013;</i></h2>
+                <div class="featureSummary">
+                    <i class='fas fa-laptop'></i>
+                    <ul>
+                        <li><i class='fas fa-pencil-alt'>&nbsp;</i><h3>This is just a summary of some of the general features of our applications</h3></li>
+                        <li><i class='fas fa-pencil-alt'>&nbsp;</i><h4>Each Modules has its own features and functions depending on the field it covers</h4></li>
+                        <li><i class='fas fa-pencil-alt'>&nbsp;</i><h5>Click on the particular application on the column above to see its unique features</h5></li>
+                    </ul>
+                </div>
+            </div>
+            <div class="Feature1">
+                <i class='fas fa-user-tie'></i>
+                <h3>User friendly</h3>
+                <p>
+                    Our softwares are designed in such a way that the end users will not require aby prior knowledge of computer operations or basic education to operate
+                </p>
+            </div>
+            <div class="Feature1">
+                <i class='fas fa-database'></i>
+                <h3>Data Security and Backups</h3>
+                <p>
+                    Passwords are encrypted and data are backed up daily and can also be restored at any given time
+                </p>
+            </div>
+            <div class="Feature1">
+                <i class='fas fa-server'></i>
+                <h3>Real Time Updating</h3>
+                <p>Transaction details are updated on dashboard in real time. These include data entry, sales and financial transaction updates</p>
+            </div>
+            <div class="Feature1">
+                <i class='fas fa-book'></i>
+                <h3>Report and Analytics</h3>
+                <p>Reports are generated in Pdfs and MsWord documents formats. These may include reports on payment made, sales and data entry within a specific period </p>
+            </div>
+            <div class="Feature1">
+                <i class='fas fa-bell'></i>
+                <h3>Notifications and Alerts</h3>
+                <p>
+                    The software throws alert on login to notify the user of things that require urgent attention or irregularities like low stock, finished stock and may include expiry date notices if required
+                </p>
+            </div>
+            <div class="Feature1">
+                <i class='fas fa-calculator'></i>
+                <h3>Accurate Data Computation/Scalable</h3>
+                <p>All softwares include accurate data calculations and computations. The software can is designed in such a way that it can accommodate and modified on data growth</p>
+            </div>
+        </div>
+    </div>
+    <div class="clientsPage">
+        <div class="Service">
+            <h2>Our Esteemed Clients</h2>
+            <img src="./adminIco.jpg" alt="pictures not available" />
+        </div>
+        <div class="subClientPages reveal fade-left">
+            <div class="clients">
+                <img src="./logo.png" alt="pictures not available" />
+                <h4>Tansi International College</h4>
+                <h5>Awka</h5>
+            </div>
+            <div class="clients">
+                <img src="./loretto.png" alt="pictures not available" />
+                <h4>Loretto Special Science</h4>
+                <h5>Adazi</h5>
+            </div>
+            <div class="clients">
+                <img src="./slogo.jpg" alt="pictures not available" />
+                <h4>Standard Secondary School</h4>
+                <h5>Ichi</h5>
+            </div>
+
+            <div class="clients">
+                <img src="./AnambraLogo.jpg" alt="pictures not available" />
+                <h4>Anambra State Govt</h4>
+                <h5><a target="_blank" href="https://www.anambraschoolsportal.com">Anambra State Unified Schools Portal</a></h5>
+            </div>
+            <div class="clients">
+                <img src="./mobilephone.jpg" alt="pictures not available" />
+                <h4>Wizzy Computers</h4>
+                <h5>Ifite Awka</h5>
+            </div>
+            <div class="clients">
+                <img src="./PHONE.jpg" alt="pictures not available" />
+                <h4>MiraGold Phone Accessories</h4>
+                <h5>St Faith Street Awka</h5>
+            </div>
+            <div class="clients">
+                <img src="./CosmeticPhoto.jpg" alt="pictures not available" />
+                <h4>Gelis Luxury Cosmetics Store</h4>
+                <h5>Gsm Village Awka</h5>
+            </div>
+            <div class="clients">
+                <img src="./HotelIcon.png" alt="pictures not available" />
+                <h4>Sweet Flavour Hotel</h4>
+                <h5>Fr Ebube Monso Road Ukwulu</h5>
+            </div>
+            <div class="clients">
+                <img src="./hotel.jfif" alt="pictures not available" />
+                <h4>Value Top Hotel</h4>
+                <h5>Nibo, Awka</h5>
+            </div>
+            <div class="clients">
+                <img src="./pharmLogo.jpg" alt="pictures not available" />
+                <h4>Green Olive Pharmacy</h4>
+                <h5>TempSite Awka</h5>
+            </div>
+        </div>
+    </div>
+    <div class="WhatDo reveal fade-right">
+        <div class="subWhatDo ">
+            <div class="Service">
+                <h2><i class="fas fa-award"></i>  what We do differently <i class="fas fa-award"></i></h2>
+                <img src="./adminIc.jpg" alt="pictures not available" />
+            </div>
+
+            <div class="whatDoDetails">
+                <ul>
+                    <li><i class="fas fa-chevron-right"></i>With our team of highly trained, experienced, young and qualified technophiles that have deployed several solutions across the nation, Software installation,  integration and maintenance is guaranteed at 100% efficiency</li>
+                    <li><i class="fas fa-chevron-right"></i>The web applications are responsive and can be accessed with mobile phones, tablets, laptops and desktop computers with internet access</li>
+                    <li><i class="fas fa-chevron-right"></i>The desktop softwares can be deployed for a server based computer system where the server controls all the attached clients via intranet connection</li>
+                    <li><i class="fas fa-chevron-right"></i>We give 1 – 3 months of free trial. After the period of free trial, full deployment follows if the client is satisfied and assured of efficiency during the trial stage.</li>
+                    <li><i class="fas fa-chevron-right"></i>The Video Tutorials of all our softwares are on our <a target="_blank" href="https://www.youtube.com/@prolessonstechnology154">Youtube channel</a></li>
+                    <li><i class="fas fa-chevron-right"></i>Redesign to suite ur organizations unique need</li>
+                    <li><i class="fas fa-chevron-right"></i>We make Software Updates easy</li>
+                    <li><i class="fas fa-chevron-right"></i>Our Softwares are highly scalable</li>
+                </ul>
+            </div>
+        </div>
+    </div>
+    <div class="wholeContactPage" id="section3">
+        <div class="ContactPage reveal fade-top">
+            <div class="contacts">
+                <div class="contactIcon"><img src="./contact_3.png" alt=""> <h3>Address</h3></div>
+                <span>TempSite Awka, Anambra State Nigeria</span>
+                <hr />
+            </div>
+            <div class="contacts">
+                <h3>WhatsApp Contact</h3>
+                <span> <a target="_blank" href="https://wa.link/9sm8ct"><i class="fab fa-whatsapp"></i></a> </span>
+                <hr />
+            </div>
+            <div class="contacts">
+                <div class="contactIcon">
+                    <img src="./phone.png" alt=""> <h3>Mobile Contact</h3>
+                </div>
+                <span>call +2348165155246</span>
+                <hr />
+            </div>
+            <div class="contacts">
+                <div class="contactIcon">
+                    <img src="./Email.png" alt=""> <h3>Email</h3>
+                </div>
+                <span>emeliechinedu@gmail.com</span>
+                <hr />
+            </div>
+        </div>
+        <div class="contact">
+            <div class="contactTitle"><h2>Get in Touch</h2></div>
+            <div class="ContactInputs">
+                <input type="text" id="fname" class="txtBox" placeholder="Your name..">
+                <input type="text" id="fname" class="txtBox" placeholder="Your Email..">
+                <input type="text" id="fname" class="txtBox" placeholder="Your Phone..">
+                <input type="text" id="fname" class="txtBox" placeholder="Subject ...">
+                <textarea id="subject" name="subject" placeholder="Write something.."></textarea>
+            </div>
+            <div class="contactBtn">
+                <input type="submit" value="Submit">
+            </div>
+        </div>
+    </div>
+    <!-- Footer page of Website -->
+    <footer>
+        <div class="footContainer">
+            <div class="newsLetter">
+                <h3><i class="fas fa-paper-plane">&nbsp;&nbsp;</i>Subscribe to our Newsletter</h3>
+                <div class="emailPortion">
+                    <input placeholder="Email address..." type="text" />
+                    <button type="submit">Subscribe</button>
+                </div>
+            </div>
+            <div class="foot">
+                <div class="footerLogo">
+                    <img src="./bookIcon.ico" alt="">
+                    <a href="#">proLessons_Technology</a>
+                </div>
+                <div class="pdfFooter">
+                    <h3><i class="fa fa-book fa-lg" style="color:lightyellow"></i>&nbsp;&nbsp;Download our PDFs &nbsp;<i class="fas fa-download"></i></h3>
+                    <p>
+                        <i class="fas fa-hotel"></i><b><a href="#">Hotel Management System</a></b>
+                    </p>
+                    <p>
+                        <i class="fas fa-school"></i><b><a href="#">School Management System</a></b>
+                    </p>
+                    <p>
+                        <i class="fas fa-hospital"></i><b><a href="#">Pharmacy Management Software</a></b>
+                    </p>
+                    <p>
+                        <i class="fab fa-laptop-house">&#xf966;</i><b><a href="#">Library MAnagement Software</a></b>
+                    </p>
+                    <p>
+                        <i class="fas fa-university"></i><b><a href="#">Result Computation and analysis for Schools</a></b>
+                    </p>
+                </div>
+
+                <div class="footerVideos">
+                    <h3><i class="fab fa-youtube" style="color:red;"></i>&nbsp;&nbsp;CheckOut our Videos On YouTube &nbsp;<i class="fas fa-stream"></i></h3>
+                    <p>
+                        <i class="fas fa-hotel"></i><b><a href="#">Hotel Management System</a></b>
+                    </p>
+                    <p>
+                        <i class="fas fa-school"></i><b><a href="#">School Management System</a></b>
+                    </p>
+                    <p>
+                        <i class="fas fa-hospital"></i><b><a href="#">Pharmacy Management Software</a></b>
+                    </p>
+                    <p>
+                        <i class="fas fa-wifi"></i><b><a href="#">Online Store</a></b>
+                    </p>
+                    <p>
+                        <i class="fas fa-download"></i><b><a href="#">Data Capturing</a></b>
+                    </p>
+                </div>
+            </div>
+        </div>
+        <div class="footerLastPage">
+            <div class="lastFooterPage">
+                <h4 style="font:larger; font-weight:bolder; ">SOCIAL MEDIA HANDLES</h4>
+                <a target="_blank" href="https://wa.link/9sm8ct"><i class="fab fa-whatsapp"></i></a>
+                <a href="https://www.facebook.com/mrbooks"><i class="fab fa-facebook-f"></i></a>
+                <a href="#"><i class="fab fa-youtube"></i></a>
+                <a href="#"><i class="fab fa-google-plus"></i></a>
+                <a href="#"><i class="fab fa-vimeo-square"></i></a>
+                <a href="#"><i class="fab fa-dribbble"></i></a>
+
+            </div>
+            <hr />
+            <p>&copy;2023 proLessons Technology, All Rights Reserved</p>
+        </div>
+    </footer>
+
+
+    <script>
+        var slidingIndex = 1;
+        showSliding(slidingIndex);
+
+
+        // Thumbnail image controls
+        function currentSlide(n) {
+            showSliding(slidingIndex = n);
+        }
+
+        function showSliding(n) {
+            var i;
+            var slida = document.getElementsByClassName("mySlides");
+            var slidar = document.getElementsByClassName("mySlides2");
+            var dota = document.getElementsByClassName("dot");
+            var dotas = document.getElementsByClassName("dota");
+            if (n > slida.length) { slidingIndex = 1 }
+            if (n > slidar.length) { slidingIndex = 1 }
+
+            if (n < 1) { slidingIndex = slida.length }
+            if (n < 1) { slidingIndex = slidar.length }
+            for (i = 0; i < slida.length; i++) {
+                slida[i].style.display = "none";
+            }
+            for (i = 0; i < slidar.length; i++) {
+                slidar[i].style.display = "none";
+            }
+            for (i = 0; i < dota.length; i++) {
+                dota[i].classList.remove("active");
+            }
+            for (i = 0; i < dotas.length; i++) {
+                dotas[i].classList.remove("actives");
+            }
+            slida[slidingIndex - 1].style.display = "block";
+            slidar[slidingIndex - 1].style.display = "block";
+            dota[slidingIndex - 1].classList.add("active");
+            dotas[slidingIndex - 1].classList.add("actives");
+        }
+
+        var slideIndex = 0;
+        showSlides();
+
+        function showSlides() {
+            var i;
+            var slides = document.getElementsByClassName("mySlides");
+            var dots = document.getElementsByClassName("dot");
+            for (i = 0; i < slides.length; i++) {
+                slides[i].style.display = "none";
+            }
+            slideIndex++
+            if (slideIndex > slides.length) {
+                slideIndex = 1;
+            }
+            slides[slideIndex - 1].style.display = "block";
+            for (i = 0; i < dots.length; i++) {
+                dots[i].className = dots[i].className.replace("active", "");
+            }
+
+            dots[slideIndex - 1].className += " active";
+            setTimeout(showSlides, 2000);
+        }
+
+        var SecslideIndex = 0;
+        showSecSlides();
+
+        function showSecSlides() {
+            var i;
+            var Secslides = document.getElementsByClassName("mySlides2");
+            var Secdots = document.getElementsByClassName("dota");
+            for (i = 0; i < Secslides.length; i++) {
+                Secslides[i].style.display = "none";
+            }
+            SecslideIndex++
+            if (SecslideIndex > Secslides.length) {
+                SecslideIndex = 1;
+            }
+            Secslides[SecslideIndex - 1].style.display = "block";
+            for (i = 0; i < Secdots.length; i++) {
+                Secdots[i].className = Secdots[i].className.replace("actives", "");
+            }
+
+            Secdots[SecslideIndex - 1].className += " actives";
+            setTimeout(showSecSlides, 3000);
+        }
+
+
+        function loadTab(evt, AppDescription) {
+            // Declare all variables
+            var i, tabcontent, tablinks;
+
+            // Get all elements with class="tabcontent" and hide them
+            tabcontent = document.getElementsByClassName("tabcontent");
+            for (i = 0; i < tabcontent.length; i++) {
+                tabcontent[i].style.display = "none";
+            }
+
+            // Get all elements with class="tablinks" and remove the class "active"
+            tablinks = document.getElementsByClassName("tablinks");
+            for (i = 0; i < tablinks.length; i++) {
+                tablinks[i].className = tablinks[i].className.replace(" active", "");
+            }
+
+            // Show the current tab, and add an "active" class to the button that opened the tab
+            document.getElementById(AppDescription).style.display = "block";
+            evt.currentTarget.className += " active";
+        }
+        // Get the element with id="defaultOpen" and click on it
+        document.getElementById("defaultOpen").click();
+
+        function reveal() {
+            var reveals = document.querySelectorAll(".reveal");
+
+            for (var i = 0; i < reveals.length; i++) {
+                var windowHeight = window.innerHeight;
+                var elementTop = reveals[i].getBoundingClientRect().top;
+                var elementVisible = 150;
+
+                if (elementTop < windowHeight - elementVisible) {
+                    reveals[i].classList.add("active");
+                } else {
+                    reveals[i].classList.remove("active");
+                }
+            }
+        }
+
+        window.addEventListener("scroll", reveal);
+
+        function clickfunction() {
+            var x = document.getElementById("nav")
+            if (x.style.display === "flex") { x.style.display = "none" }
+            else { x.style.display = "flex" }
+        }
+
+        function showAlert() {
+            var myText = "The Advanced school Management Software is the combination of the softwares described so far. These include: Library, School Accounting, Employee Management, Computer Based Test, Result Computation, Data Capturing Software";
+            alert(myText);
+        }
+        function showAlerts() {
+            var myText = "Details to be uploaded soon";
+            alert(myText);
+        }
+        function showAlertss() {
+            var myText = "Similar to the employee Registration Module in Employee Management Software";
+            alert(myText);
+        }
+        function showAlertz() {
+            var myText = "Details available on request";
+            alert(myText);
+        }
+    </script>
+
+</body>
+</html>

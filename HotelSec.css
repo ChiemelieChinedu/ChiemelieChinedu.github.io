@@ -1,0 +1,178 @@
+.HotelfirstPage {
+    margin-top: 50px;
+}
+
+    .HotelfirstPage .subFirstPage {
+        display: flex;
+        align-items:center;
+        justify-content: space-around;
+        width: 95%;
+    }
+        .HotelfirstPage .subFirstPage .firstText {
+            width: 50%;
+        }
+        .HotelfirstPage .subFirstPage h1 {
+            font-size: 35px;
+            font-family: 'Open Sans', sans-serif;
+            font-weight: bolder;
+            margin-bottom: 20px;
+            color: cadetblue;
+        }
+        .HotelfirstPage .subFirstPage p {
+            line-height: 30px;
+            font-size: 20px;
+            text-align:justify;
+            margin-bottom: 30px;
+        }
+    .subFirstPage button
+    {
+        padding:15px;
+        font-size:15px;
+        font-weight:bolder;
+        background-color:darkgreen;
+        color:white;
+    }
+
+/********************Second Page**********/
+.HotelsecPage {
+    width: 100%;
+    background-color: whitesmoke;
+    margin-top: 50px;
+}
+    .HotelsecPage .subSecPage {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        width: 100%;
+        margin-left: auto;
+        margin-right: auto;
+        padding-bottom: 50px;
+    }
+        .HotelsecPage .subSecPage .PageImage {
+            margin-top: 20px;
+            padding-left:10px;
+            width: 55%;
+        }
+        .HotelsecPage .subSecPage .pageText {
+            margin-top: 20px;
+            width: 45%;
+            padding-right: 10px;
+        }
+        .HotelsecPage .subSecPage .pageText h2{
+            margin-bottom:30px;
+        }
+            .HotelsecPage .subSecPage .PageImage img {
+            border-top-right-radius: 50px;
+            height: 60vh;
+            width: 105vh
+        }
+
+        .HotelsecPage .subSecPage .pageText ul {
+            list-style: none;
+            margin-top: 10px;
+        }
+
+            .HotelsecPage .subSecPage .pageText ul li {
+                text-decoration: none;
+                font-family: Georgia, 'Times New Roman', Times, serif;
+                font-weight:100;
+                color: darkslateblue
+            }
+
+
+        .HotelsecPage .subSecPage .pageText i {
+            color: white;
+            margin-right: 1rem;
+            margin-bottom: 1rem;
+            text-align: center;
+            line-height: 0.8rem;
+            width: 1rem;
+            border-radius: 50%;
+            background-color: palevioletred;
+        }
+        /***************ThirdPage**************/
+.thirdPage {
+    width: 100%;
+    margin-top: 50px;
+}
+    .thirdPage .subthirdPage
+    {
+        padding-top:50px;
+    }
+
+        .thirdPage .subthirdPage .mySlides2 {
+            display: none;
+            width: 98%;
+            justify-content: center;
+            margin-left: auto;
+            margin-right: auto;
+        }
+            .thirdPage .subthirdPage .mySlides2 .text {
+                width: 45%;
+            }
+                .thirdPage .subthirdPage .mySlides2 .text h3 {
+                    font-family: Verdana;
+                    margin-bottom: 25px;
+                }
+                .thirdPage .subthirdPage .mySlides2 .text p {
+                    color: darkslategray;
+                    padding-right: 50px;
+                    padding-left: 10px;
+                    padding-bottom: 10px;
+                    font-family: Georgia;
+                    font-weight: bolder;
+                    font-size: 15px;
+                    line-height: 20px;
+                    text-align: justify;
+                }
+                .thirdPage .subthirdPage .mySlides2 .text button {
+                    margin-top: 50px;
+                    padding: 15px;
+                    font-size: 15px;
+                    font-weight: bolder;
+                    border-radius: 10px;
+                    background-color: darkgreen;
+                    color: white;
+                }
+            .thirdPage .subthirdPage .mySlides2 .image {
+                width: 53%;
+            }
+                .thirdPage .subthirdPage .mySlides2 .image img {
+                    box-shadow: 0px 10px 10px #aaaaaa;
+                    border-top-right-radius: 50px;
+                    height: 65vh;
+                    width: 100vh
+                }
+        .thirdPage .dotCircles {
+            padding: 25px 0;
+            text-align: center;
+           
+        }
+
+        /***************FourthPage**************/
+.fourthPage
+{
+    width:100%;
+    background-color:whitesmoke;
+    height:auto;
+}
+.subfourthPage {
+    width: 98%;
+    display: flex;
+    justify-content:space-around;
+    align-items:center;
+    flex-wrap: wrap;
+}
+.subfourthImage
+{
+    width:45%;
+    margin:25px 10px;
+    text-align:center;
+}
+    .subfourthImage img {
+        box-shadow: 0px 10px 10px #aaaaaa;
+        border-top-right-radius: 50px;
+        height: 55vh;
+        width: 90vh;
+        margin-bottom:10px
+    }
