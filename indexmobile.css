@@ -1,0 +1,469 @@
+/***********Moblie View*************/
+@media (min-width:320px) and (max-width: 767px) {
+    body {
+        width: 100%;
+        overflow-x: hidden;
+        margin: 0;
+    }
+
+    .navbar {
+        display: flex;
+        flex-wrap: nowrap;
+        width: 100%;
+        justify-content: space-between;
+        position: relative;
+    }
+
+        .navbar .logo img {
+            line-height: 25px;
+            width: 25px;
+        }
+
+        .navbar .logo {
+            margin-bottom: 5px;
+        }
+
+            .navbar .logo a {
+                font-size: 16px;
+            }
+
+    .menu {
+        font-size: 20px;
+        display: block;
+        text-align: center;
+        background-color: white;
+        height: 30px;
+        width: 25px;
+        padding-top: 5px;
+        position: absolute;
+        right: 0;
+    }
+
+    .menuBar {
+        display: none;
+        position: absolute;
+        right: 0;
+        top: 10px;
+    }
+
+    .menuBars {
+        position: absolute;
+        right: 25px;
+    }
+
+        .menuBars button {
+            border-radius: 5px;
+            padding: 5px 2px;
+            font-size: 10px;
+            margin-right: 0px;
+        }
+
+    .navbar ul {
+        flex-direction: column;
+        justify-content: center;
+        height: 180px;
+        width: 80px;
+        background-color: white;
+        margin: 0px 0px;
+    }
+
+        .navbar ul li {
+            padding: 5px 0px;
+        }
+
+            .navbar ul li a {
+                text-decoration: none;
+                font-weight: bolder;
+                font-size: 20px;
+                background-color: white;
+                font-family: 'Agency FB';
+                border-radius: 0px;
+                color: #333;
+                cursor: pointer;
+                padding: 0px 4px;
+                border-bottom: 1px solid #fff;
+                transition: background .4s;
+            }
+
+
+    /* The Modal (background) */
+    .modal {
+        width: 80%; /* Full width */
+    }
+    /***********Banner Area************/
+    .bannerArea {
+        height: auto;
+    }
+
+        .bannerArea h1 {
+            font-size: 18px;
+            margin: 40px 0px 15px 0px;
+        }
+
+        .bannerArea h3 {
+            font-size: 12px;
+        }
+
+        .bannerArea a {
+            padding: 10px 20px;
+            font-size: 15px;
+        }
+    /**************About Us*********/
+    .AboutUS {
+        width: 90%;
+    }
+
+        .AboutUS .AboutUSText {
+            width: 100%;
+            padding: 5px 10px;
+            margin-bottom: 5px;
+            border-radius: 10px;
+        }
+
+            .AboutUS .AboutUSText h1 {
+                margin-bottom: 15px;
+                font-size: 25px
+            }
+
+            .AboutUS .AboutUSText p {
+                font-size: 15px;
+                line-height: 25px;
+                text-align: start;
+            }
+
+        .AboutUS .AboutUSImage {
+            width: 100%;
+        }
+
+            .AboutUS .AboutUSImage img {
+                width: 100%;
+                height: 30vh
+            }
+    /***********Services Section*******/
+    #section2 {
+        padding: 0 5px;
+    }
+
+    .Services {
+        flex-direction: column;
+    }
+
+    .Service {
+        height: auto;
+    }
+    /*************Tab Button**********/
+    .tabButton {
+        display: flex;
+        flex-wrap: wrap;
+        width: 100%;
+    }
+
+        .tabButton .tablinks {
+            position: relative;
+            width: 100%;
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+            border-radius: 10px;
+        }
+
+            .tabButton .tablinks .tabHeader {
+                display: flex;
+                justify-content: flex-start;
+                align-items: center;
+                width: 300px;
+                margin-left: 0;
+            }
+
+            .tabButton .tablinks i {
+                font-size: 20px;
+                margin-left: 10px;
+                width: 25px;
+            }
+
+            .tabButton .tablinks img {
+                width: 25px;
+                height: 25px;
+                margin-left: 10px;
+            }
+
+            .tabButton .tablinks h2 {
+                margin-left: 10px;
+                font-size: 15px;
+            }
+
+            .tabButton .tablinks .tabHeader:after {
+                position: absolute;
+                content: '\02795'; /* Unicode character for "plus" sign (+) */
+                font-size: 13px;
+                color: #777;
+                right: 0;
+                margin-left: 5px;
+            }
+    /**********Tab Content*******/
+    .tabcontent {
+        width: 100%;
+        padding: 6px 0px;
+        margin-left: 0px;
+    }
+
+    .tabcontentBody {
+        flex-wrap: wrap;
+        height: auto;
+        overflow: hidden;
+        padding: 0 8px;
+        margin-top: -10px;
+    }
+
+        .tabcontentBody .leftDiv {
+            width: 100%;
+        }
+
+            .tabcontentBody .leftDiv p {
+                font-size: 14px;
+                text-align: start;
+            }
+
+    .tabcontent ul li {
+        padding: 2px 0;
+    }
+
+    .tabcontentBody .leftDiv ul li a {
+        text-align: start;
+        font-weight: 400;
+        font-size: 12px;
+    }
+
+    .tabcontent i {
+        margin-right: 0.5rem;
+        margin-bottom: 0.2rem;
+    }
+
+    .tabcontentBody .rightDiv {
+        width: 100%;
+        margin: 0;
+    }
+
+        .tabcontentBody .rightDiv img {
+            width: 100%;
+            height: 40vh;
+        }
+    /********tabContent Image Slider***********/
+    .tabcontent .rightDiv .text {
+        position: relative;
+        color: blue;
+        font-size: 15px;
+        padding: 0px 0px;
+        width: 100%;
+        font-weight: bolder;
+    }
+
+    .dot {
+        width: 10px;
+        margin: 0 0px;
+    }
+
+    .dota {
+        width: 10px;
+        margin: 0 0px;
+    }
+    /***********Software Features**********/
+    .softwareFeatures .mainAppFeatures {
+        height: auto;
+        margin-top: -20px;
+    }
+
+    .mainAppFeatures .Service {
+        margin-top: 10px;
+    }
+
+        .mainAppFeatures .Service h2 {
+            font-size: 20px;
+        }
+
+    .mainAppFeatures .featureSummary ul {
+        width: 50vh;
+    }
+
+    .mainAppFeatures .Service .featureSummary .fa-laptop {
+        font-size: 20px;
+    }
+
+    .mainAppFeatures .Service ul li {
+        font-size: 12px;
+    }
+
+    .softwareFeatures .mainAppFeatures .Feature1 h3 {
+        font-size: 15px;
+    }
+
+    .softwareFeatures .mainAppFeatures .Feature1 p {
+        font-size: 15px;
+    }
+
+    .softwareFeatures .mainAppFeatures .Feature1 {
+        height: auto;
+        width: 50vh;
+        margin-bottom: 0.2rem;
+    }
+
+        .softwareFeatures .mainAppFeatures .Feature1:last-child {
+            margin-bottom: 1rem;
+        }
+    /***************clientsPage******/
+    .clientsPage {
+        width: 100%;
+    }
+
+        .clientsPage .Service h2 {
+            font-size: 25px;
+            margin-bottom: 0.5rem;
+        }
+
+        .clientsPage .Service img {
+            height: 50px;
+        }
+
+    .subClientPages .clients {
+        width: 150px;
+        margin-top: 0px;
+        height: 100px;
+        margin-bottom: 1.8rem;
+        font-size: 12px;
+    }
+
+    .clients img {
+        box-shadow: 0px 10px 10px #aaaaaa;
+        height: 50px;
+    }
+    /***********What we do differently**************/
+    .WhatDo {
+        margin-top: 0;
+
+    }
+        .WhatDo .subWhatDo {
+            width:98%;
+        }
+            .WhatDo .subWhatDo .Service {
+                margin-top: 0;
+                width: 100%;
+                margin-bottom: 0;
+            }
+            .WhatDo .subWhatDo .Service h2 {
+                font-size: 22px;
+            }
+                .WhatDo .Service img {
+                    width:100px;
+                    height:100px;
+                    margin-top:-15px;
+                    border-radius: 50%;
+                }
+        .WhatDo .whatDoDetails {
+            width: 100%;
+            padding:0;
+            font-size:13px;
+        }
+
+    /**************ContactPage**********/
+    .wholeContactPage {
+        width:100%;
+        display: flex;
+        margin-top: 0.5rem;
+        flex-direction: column-reverse;
+    }
+
+        .wholeContactPage .ContactPage {
+            background-color: black;
+            color: white;
+            width: 90%;
+            height: auto;
+            padding: 20px;
+        }
+
+    .ContactPage .contacts {
+        height:auto;
+    }
+
+        .ContactPage .contacts hr {
+            width: 50vh;
+        }
+
+    .wholeContactPage .contact {
+        width: 98%;
+        padding:10px;
+    }
+
+    .ContactInputs input[type=text] {
+        width: 100%;
+    }
+
+    textarea {
+        width: 100%;
+        height: 20vh;
+    }
+    /************NewsLetter***********/
+    .footContainer .newsLetter {
+        width: 98%;
+        flex-wrap: wrap;
+        padding:0;
+    }
+
+        .footContainer .newsLetter h3 {
+            width: 100%;
+            font-size: 15px;
+        }
+
+        .footContainer .newsLetter button {
+            position: absolute;
+            right: 0;
+            margin-right: 0px;
+            padding: 10px 3px;
+        }
+            .footContainer .emailPortion {
+        width: 90%;
+    }
+    .footContainer .newsLetter input[type=text] {
+        width: 90%;
+        height: 35px;
+        border: 1px solid #ccc;
+        border-radius: 4px;
+        resize: vertical;
+        margin-left: 10px;
+    }
+    /***********Footer***********888*/
+    .footContainer {
+        background-color: darkslategrey;
+        opacity:1.2;
+    }
+    .footContainer .foot {
+        width: 90%;
+        margin-left: auto;
+        margin-right: auto;
+        margin-top: 40px;
+        justify-content: center;
+        flex-wrap: wrap;
+        height: auto;
+       
+    }
+    .foot i {
+        color: crimson;
+        font-size: 20px;
+    }
+        .footContainer .foot .footerLogo {
+            width: 100%;
+            display:none;
+        }
+
+        .footContainer .foot .pdfFooter {
+            width: 100%;
+        }
+
+        .footContainer .foot .footerVideos {
+            width: 100%;
+        }
+    .lastFooterPage i {
+        line-height: 40px;
+        width: 40px;
+        font-size: 20px;
+    }
+}

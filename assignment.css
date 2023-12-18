@@ -67,6 +67,7 @@ header {
     display: flex;
     align-items: center;
     justify-content: space-between;
+ 
 }
 .menuBars button {
     border-radius: 20px;
@@ -280,6 +281,7 @@ header {
         flex-direction: column;
         flex-wrap: wrap;
         width: 55%;
+        text-align:justify;
         padding: 25px 20px;
         background: #fafafa;
         box-shadow: 0px 5px 20px rgba(0,0,0,0.1);
@@ -287,7 +289,6 @@ header {
     }
 .AboutUS .AboutUSText p {
     width: 99%;
-    text-align: justify;
     margin-bottom: 25px;
     line-height: 25px;
     font-family: 'Teko', sans-serif;
@@ -464,13 +465,13 @@ header {
     list-style: none;
     margin-top:10px;
 }
+    
     .tabcontent ul li a {
         text-decoration: none;
         font-family: Georgia, 'Times New Roman', Times, serif;
         font-weight: 800;
-        color:darkslateblue;
-        cursor:pointer;
-
+        color: darkslateblue;
+        cursor: pointer;
     }
      .tabcontent ul li a:hover
      {
@@ -651,7 +652,7 @@ header {
         height: auto;
         font-family: Georgia;
         font-size: 17px;
-        text-align: justify;
+        text-align:match-parent;
         margin-top: 0px;
     }
            /***********End of Features*************8*/
@@ -1052,342 +1053,6 @@ footer {
 }
 /************Footer End*************/
 
-/***********Moblie View*************/
-@media (min-width:320px) and (max-width: 767px) {
-    body {
-        width: 100%;
-    overflow-x: hidden;
-    margin:0;
-    }
-
-    .navbar {
-        display: flex;
-        flex-wrap: nowrap;
-        width: 100%;
-        justify-content: space-between;
-        position: relative;
-    }
-
-    .menu {
-        font-size: 20px;
-        display: block;
-        text-align: center;
-        background-color: white;
-        height: 30px;
-        width: 30px;
-        padding-top: 2px;
-        position: absolute;
-        right: 0;
-    }
-
-    .menuBar {
-        display: none;
-        position: absolute;
-        right: 0;
-        top: 10px;
-    }
-    .menuBars {
-        position: absolute;
-        right: 30px;
-        
-    }
-        .menuBars button {
-            border-radius: 10px;
-            font-size: 12px;
-        }
-            .navbar ul {
-            flex-direction: column;
-            justify-content: center;
-            height: 180px;
-            width: 80px;
-            background-color: white;
-            margin: 0px 0px;
-        }
-
-        .navbar ul li {
-            padding: 5px 0px;
-        }
-
-            .navbar ul li a {
-                text-decoration: none;
-                font-weight: bolder;
-                font-size: 20px;
-                background-color: white;
-                font-family: 'Agency FB';
-                border-radius: 0px;
-                color: #333;
-                cursor: pointer;
-                padding: 0px 4px;
-                border-bottom: 1px solid #fff;
-                transition: background .4s;
-            }
-
-    .navbar .logo {
-        margin-bottom: 5px;
-    }
-    .navbar .logo a{
-        font-size:20px;
-    }
-    /* The Modal (background) */
-    .modal {
-        
-        width: 80%; /* Full width */
-       
-    }
-    /***********Banner Area************/
-    .bannerArea h1 {
-        font-size: 20px;
-    }
-    /**************About Us*********/
-    .AboutUS {   
-        width: 90%;
-    }
-    
-    .AboutUS .AboutUSText {
-        width:100%;
-        padding:5px 10px;
-        margin-bottom:5px;
-        border-radius:10px;
-    }
-        .AboutUS .AboutUSText h1 {
-            margin-bottom: 15px;
-            font-size: 25px
-        }
-    .AboutUS .AboutUSText p {
-        font-size: 15px;
-       line-height:25px
-    }
-
-        .AboutUS .AboutUSImage {
-            width: 100%;
-        }
-
-        .AboutUS .AboutUSImage img {
-            width: 100%;
-            height: 30vh
-        }
-        /***********Services Section*******/
-    #section2 {
-        padding: 0 5px;
-    }
-    .Services {
-        flex-direction: column;
-    }
-
-    .Service {
-        height: auto;
-    }
-    /*************Tab Button**********/
-    .tabButton {
-        display: flex;
-        flex-wrap: wrap;
-        width: 100%;
-    }
-
-        .tabButton .tablinks {
-            position: relative;
-            width: 100%;
-            display: flex;
-            align-items: center;
-            justify-content: space-between;
-            border-radius: 10px;
-        }
-
-            .tabButton .tablinks .tabHeader {
-                display: flex;
-                justify-content: flex-start;
-                align-items: center;
-                width: 300px;
-                margin-left: 0;
-            }
-
-            .tabButton .tablinks i {
-                font-size: 20px;
-                margin-left: 10px;
-                width: 25px;
-            }
-
-            .tabButton .tablinks img {
-                width: 25px;
-                height: 25px;
-                margin-left: 10px;
-            }
-
-            .tabButton .tablinks h2 {
-                margin-left: 10px;
-                font-size: 15px;
-            }
-
-            .tabButton .tablinks .tabHeader:after {
-                position: absolute;
-                content: '\02795'; /* Unicode character for "plus" sign (+) */
-                font-size: 13px;
-                color: #777;
-                right: 0;
-                margin-left: 5px;
-            }
-    /**********Tab Content*******/
-    .tabcontentBody {
-        width: 100%;
-        flex-wrap: wrap;
-        height: auto;
-        overflow: hidden;
-        padding: 0 18px;
-        margin-top: -10px;
-    }
-
-        .tabcontentBody .leftDiv {
-            width: 100%;
-        }
-
-            .tabcontentBody .leftDiv p {
-                font-size: 15px;
-            }
-
-            .tabcontentBody .leftDiv ul li a {
-                font-size: 15px;
-            }
-
-        .tabcontentBody .rightDiv {
-            width: 100%;
-            margin: 0;
-        }
-
-            .tabcontentBody .rightDiv img {
-                width:100%;
-                height:50vh;
-            }
-
-    /***********Software Features**********/
-    .softwareFeatures .mainAppFeatures {
-        height: auto;
-        margin-top: -20px;
-    }
-
-    .mainAppFeatures .Service {
-        margin-top: 10px;
-    }
-        .mainAppFeatures .Service h2 {
-            font-size:25px;
-        }
-        .mainAppFeatures .Service .featureSummary .fa-laptop {
-            font-size:30px;
-        }
-        .mainAppFeatures .Service ul li {
-            font-size: 15px;
-        }
-        .softwareFeatures .mainAppFeatures .Feature1 h3 {
-            font-size: 15px;
-        }
-    .softwareFeatures .mainAppFeatures .Feature1 p{
-        text-align:justify;
-    }
-    .softwareFeatures .mainAppFeatures .Feature1 {
-        height: auto;
-        width: 50vh;
-        margin-bottom: 0.5rem;
-    }
-    
-        /***************clientsPage******/
-    .clientsPage {
-        width: 95%;
-    }
-        .clientsPage .clients {
-        margin-top: 0px;
-        height: 170px;
-    }
-
-    .subClientPages .clients {
-        width: 150px;
-        margin-bottom:1.5rem;
-    }
-    /***********What we do differently**************/
-    .WhatDo{
-        margin-top:0;
-    }
-        .WhatDo .subWhatDo .Service {
-            margin-top:0;
-        }
-            .WhatDo .Service {
-        width: 100%;
-    }
-
-    .WhatDo .whatDoDetails {
-        width: 100%;
-    }
-
-    /**************ContactPage**********/
-    .wholeContactPage {
-        display: flex;
-        margin-top: 0.5rem;
-        flex-direction: column-reverse;
-    }
-
-        .wholeContactPage .ContactPage {
-            background-color: black;
-            color: white;
-            width: 90%;
-            height: auto;
-            padding: 30px;
-        }
-
-    .ContactPage .contacts {
-        height: 18vh;
-    }
-
-        .ContactPage .contacts hr {
-            width: 45vh;
-        }
-
-    .wholeContactPage .contact {
-        width: 100%;
-    }
-    .ContactInputs input[type=text] {
-        width: 100%;
-    }
-    textarea {
-        width: 100%;
-        height: 20vh;
-    }
-    /************NewsLetter***********/
-    .footContainer .newsLetter {
-        width: 85%;
-        flex-wrap: wrap;
-        padding: 0px 50px;
-    }
-
-        .footContainer .newsLetter h3 {
-            width: 100%;
-            font-size: 15px;
-        }
-
-    .footContainer .emailPortion {
-        width: 100%;
-    }
-    /***********Footer***********888*/
-    .footContainer .foot {
-        width: 60%;
-        margin-left: auto;
-        margin-right: auto;
-        margin-top:20px;
-        justify-content: center;
-        flex-wrap: wrap;
-        height: auto;
-    }
-
-        .footContainer .foot .footerLogo {
-            width: 100%;
-            display:none;
-        }
-
-        .footContainer .foot .pdfFooter {
-            width: 100%;
-        }
-
-        .footContainer .foot .footerVideos {
-            width: 100%;
-        }
-}
 /***************Tablet View***************/
 @media (min-width:768px) and (max-width: 1200px) {
     /*********************Header************/
