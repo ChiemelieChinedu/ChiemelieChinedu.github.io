@@ -1,7 +1,3 @@
-.firstPage {
-    margin-top: 50px;
-}
-
 .subFirstPage
 {
 display:flex;
@@ -68,6 +64,9 @@ width:85%;
         .subSecPage .pageText h2 {
             margin-bottom: 30px;
         }
+.smallImage {
+    display: none;
+}
     .subSecPage .PageImage img {
         border-top-right-radius: 50px;
         height: 60vh;
@@ -104,7 +103,7 @@ width:85%;
 }
     .thirdPage .subthirdPage
     {
-        padding-top:50px;
+        padding-top:10px;
     }
 
         .thirdPage .subthirdPage .mySlides2 {
@@ -189,108 +188,6 @@ width:85%;
     height: 580px;
 }
 /***********Moblie View*************/
-@media (min-width:320px) and (max-width: 767px) {
-    body {
-        width: 100%;
-        overflow-x: hidden;
-    }
-    .firstPage {
-        margin-top:0px;
-    }
-
-    .subFirstPage {
-        display: flex;
-        flex-direction: column;
-        width: 100%;
-        padding: 15px;
-    }
-        .subFirstPage .firstText {
-            width: 100%;
-            
-        }
-        .subFirstPage h1 {
-            font-size: 25px;  
-        }
-        .subFirstPage p {
-            text-align:justify;
-            
-        }
-        .subFirstPage .chartImage {
-            margin-top:45px;
-            width: 100%;
-            text-align: center
-        }
-        /**************SecondPage**********/
-    .subSecPage {
-        display: flex;
-        flex-direction: column-reverse;
-    }
-
-    .secPage .subSecPage .PageImage {
-        margin-top: 20px;
-        padding-left: 0px;
-        width: 98%;
-    }
-
-    .secPage .subSecPage .pageText {
-        margin-top: 20px;
-        width: 98%;
-        padding-right: 0px;
-        padding-left: 5px;
-    }
-
-    .secPage .subSecPage .PageImage img {
-        padding:0;
-        margin:0;
-        height: 60vh;
-        width: 100%;
-    }
-    /***************ThirdPage**************/
-    .thirdPage {
-        margin-top: 0px;
-    }
-
-        .thirdPage .subthirdPage .mySlides2 {
-            flex-direction: column;
-        }
-
-            .thirdPage .subthirdPage .mySlides2 .text {
-                width: 98%;
-            }
-
-                .thirdPage .subthirdPage .mySlides2 .text p {
-                    padding-right: 0px;
-                }
-
-                .thirdPage .subthirdPage .mySlides2 .text button {
-                    margin-top: 10px;
-                    padding: 10px;
-                    font-size: 12px;
-                }
-
-            .thirdPage .subthirdPage .mySlides2 .image {
-                width: 98%;
-                padding-top: 20px;
-            }
-
-                .thirdPage .subthirdPage .mySlides2 .image img {
-                    height: 50vh;
-                    width: 100%;
-                }
-    /****************FourthPage***********/
-    .subfourthImage {
-        width: 98%;   
-    }
-        .subfourthImage img {
-            height:40vh;
-            width: 100%;
-            margin-bottom: 10px
-        }
-        /*******fOOTER*******/
-    .footerIframe iframe {
-        height: 850px;
-    }
-}
 @media (min-width:768px) and (max-width: 1200px) {
     /*********************Header************/
     body {

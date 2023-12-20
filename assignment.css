@@ -179,12 +179,12 @@ header {
     outline: none;
 }
 
-    .input-field:focus {
-        border: 2px solid dodgerblue;
-    }
+.modal-content .input-field:focus {
+    border: 2px solid dodgerblue;
+}
 
 /* Set a style for the submit button */
-.btn {
+.modal-content .btn {
     background-color: dodgerblue;
     color: white;
     padding: 15px 20px;
@@ -194,7 +194,7 @@ header {
     opacity: 0.9;
 }
 
-    .btn:hover {
+    .modal-content .btn:hover {
         opacity: 1;
     }
 /***************MenuIcon***********/

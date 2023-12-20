@@ -43,7 +43,7 @@
         display: none;
         position: absolute;
         right: 0;
-        top: 10px;
+        top: 25px;
     }
 
     .menuBars {
@@ -60,15 +60,15 @@
 
     .navbar ul {
         flex-direction: column;
-        justify-content: center;
-        height: 180px;
-        width: 80px;
+        height:auto;
+        z-index:10;
+        width: 150px;
         background-color: white;
         margin: 0px 0px;
     }
 
         .navbar ul li {
-            padding: 5px 0px;
+            padding:5px 0px;
         }
 
             .navbar ul li a {
@@ -88,8 +88,36 @@
 
     /* The Modal (background) */
     .modal {
-        width: 80%; /* Full width */
+        width: 98%; /* Full width */
     }
+    .modal-content {
+        background-color: #fefefe;
+        padding: 5px;
+        border: 1px solid #888;
+        width: 96%; /* Could be more or less, depending on screen size */
+    }
+        .modal-content .input-container {
+            margin-bottom:8px;
+        }
+    .modal-content .subModal .subModalText {
+        width: 100%;
+    }
+
+    .modal-content .subModal .imgClass {
+        display: none;
+    }
+    .modal-content .subModal .imgClass2 {
+       display:none;
+    }
+    /* Style the form icons */
+    .modal-content .input-container .icons {
+        padding: 10px 5px;
+        min-width:20px;
+    }
+        .modal-content .btn {
+            
+            padding: 5px 20px;
+        }
     /***********Banner Area************/
     .bannerArea {
         height: auto;
@@ -278,15 +306,15 @@
     }
 
         .mainAppFeatures .Service h2 {
-            font-size: 20px;
+            font-size: 15px;
         }
 
     .mainAppFeatures .featureSummary ul {
-        width: 50vh;
+        width:auto;
     }
 
     .mainAppFeatures .Service .featureSummary .fa-laptop {
-        font-size: 20px;
+        display:none;
     }
 
     .mainAppFeatures .Service ul li {
@@ -407,6 +435,7 @@
         width: 98%;
         flex-wrap: wrap;
         padding:0;
+        background-color:black;
     }
 
         .footContainer .newsLetter h3 {
