@@ -1,13 +1,14 @@
 /***********Moblie View*************/
 @media (min-width:320px) and (max-width: 767px) {
-     body {
-        min-width: 100%;
-       overflow-x:hidden;
+    body {
+        width: 100%;
+        overflow-x:hidden;
         margin: 0;
         padding:0;
     }
 
     .navbar {
+
         display: flex;
         flex-wrap: nowrap;
         width: 100%;
@@ -124,7 +125,7 @@
     /***********Banner Area************/
     .bannerArea {
         height: auto;
-       overflow-x:hidden;
+        overflow-x: hidden;
     }
 
         .bannerArea h1 {
@@ -143,7 +144,7 @@
     /**************About Us*********/
     .AboutUS {
         width: 90%;
-        overflow-x:hidden;
+        overflow-x: hidden;
     }
 
         .AboutUS .AboutUSText {
@@ -175,7 +176,7 @@
     /***********Services Section*******/
     #section2 {
         padding: 0 5px;
-        overflow-x:hidden;
+        overflow-x: hidden;
     }
 
     .Services {
@@ -190,7 +191,6 @@
         display: flex;
         flex-wrap: wrap;
         width: 100%;
-        overflow-x:hidden;
     }
 
         .tabButton .tablinks {
@@ -240,12 +240,13 @@
         width: 100%;
         padding: 6px 0px;
         margin-left: 0px;
+        overflow-x: hidden;
     }
 
     .tabcontentBody {
         flex-wrap: wrap;
         height: auto;
-        overflow-x:hidden;
+        overflow: hidden;
         padding: 0 8px;
         margin-top: -10px;
     }
@@ -303,10 +304,12 @@
         margin: 0 0px;
     }
     /***********Software Features**********/
-    .softwareFeatures .mainAppFeatures {
-        height: auto;
-        margin-top: -20px;
-       overflow-x:hidden;
+    .softwareFeatures {
+        margin: 20px auto;
+        overflow-x: hidden;
+    }
+        .softwareFeatures .mainAppFeatures {
+        height: auto; 
     }
 
     .mainAppFeatures .Service {
@@ -349,9 +352,11 @@
     /***************clientsPage******/
     .clientsPage {
         width: 100%;
-         overflow-x:hidden;
+        overflow-x: hidden;
     }
-
+        .clientsPage .Service {
+            margin-top: 0.2rem;
+        }
         .clientsPage .Service h2 {
             font-size: 25px;
             margin-bottom: 0.5rem;
@@ -376,7 +381,7 @@
     /***********What we do differently**************/
     .WhatDo {
         margin-top: 0;
-overflow-x:hidden;
+        overflow-x: hidden;
     }
         .WhatDo .subWhatDo {
             width:98%;
@@ -404,11 +409,11 @@ overflow-x:hidden;
 
     /**************ContactPage**********/
     .wholeContactPage {
-        width:100%;
-        overflow-x:hidden;
+        width: 100%;
         display: flex;
         margin-top: 0.5rem;
         flex-direction: column-reverse;
+        overflow-x: hidden;
     }
 
         .wholeContactPage .ContactPage {
@@ -420,7 +425,7 @@ overflow-x:hidden;
         }
 
     .ContactPage .contacts {
-       height:auto;
+        height:auto;
         margin-bottom:20px;
     }
 
@@ -431,7 +436,6 @@ overflow-x:hidden;
     .wholeContactPage .contact {
         width: 98%;
         padding:10px;
-         overflow-x:hidden;
     }
 
     .ContactInputs input[type=text] {
@@ -444,11 +448,11 @@ overflow-x:hidden;
     }
     /************NewsLetter***********/
     .footContainer .newsLetter {
-       
         width: 98%;
         flex-wrap: wrap;
-        padding:0;
-        background-color:black;
+        padding: 0;
+        background-color: black;
+        overflow-x: hidden;
     }
 
         .footContainer .newsLetter h3 {
@@ -476,18 +480,18 @@ overflow-x:hidden;
     /***********Footer***********888*/
     .footContainer {
         background-color: darkslategrey;
-        opacity:1.2;
+        opacity: 1.2;
     }
-    .footContainer .foot {
-        width: 90%;
-        margin-left: auto;
-        margin-right: auto;
-        margin-top: 40px;
-        justify-content: center;
-        flex-wrap: wrap;
-        height: auto;
-       overflow-x:hidden;
-    }
+        .footContainer .foot {
+            width: 90%;
+            margin-left: auto;
+            margin-right: auto;
+            margin-top: 40px;
+            justify-content: center;
+            flex-wrap: wrap;
+            height: auto;
+            overflow-x: hidden;
+        }
     .foot i {
         color: crimson;
         font-size: 20px;
@@ -504,10 +508,9 @@ overflow-x:hidden;
         .footContainer .foot .footerVideos {
             width: 100%;
         }
-     .footerLastPage
-     {
-        overflow-x:hidden;
-     }
+    .footerLastPage {
+        overflow-x: hidden;
+    }
     .lastFooterPage i {
         line-height: 40px;
         width: 40px;
