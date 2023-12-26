@@ -2,6 +2,7 @@
             margin: 0;
             padding:0;
             box-sizing: border-box;
+               overflow:hidden;
         }
          html {
   scroll-behavior: smooth;
@@ -1031,6 +1032,7 @@ footer {
     display:flex;
 }
 .footerLastPage {
+       overflow:hidden;
     margin-top: 10px;
     text-align: center;
     color: darkolivegreen;
