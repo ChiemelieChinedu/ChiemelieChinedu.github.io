@@ -9,7 +9,6 @@
 
     .navbar {
         display: flex;
-        overflow-x:hidden;
         flex-wrap: nowrap;
         width: 100%;
         justify-content: space-between;
@@ -421,7 +420,8 @@ overflow-x:hidden;
         }
 
     .ContactPage .contacts {
-       padding-bottom:20px;
+       height:auto;
+        margin-bottom:20px;
     }
 
         .ContactPage .contacts hr {
@@ -477,7 +477,6 @@ overflow-x:hidden;
     .footContainer {
         background-color: darkslategrey;
         opacity:1.2;
-         overflow-x:hidden;
     }
     .footContainer .foot {
         width: 90%;
