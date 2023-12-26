@@ -2,7 +2,7 @@
 @media (min-width:320px) and (max-width: 767px) {
      body {
         min-width: 100%;
-        overflow:hidden;
+       overflow-x:hidden;
         margin: 0;
         padding:0;
     }
