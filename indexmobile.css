@@ -421,7 +421,7 @@ overflow-x:hidden;
         }
 
     .ContactPage .contacts {
-       
+       padding-bottom:20px;
     }
 
         .ContactPage .contacts hr {
@@ -444,7 +444,7 @@ overflow-x:hidden;
     }
     /************NewsLetter***********/
     .footContainer .newsLetter {
-        overflow-x:hidden;
+       
         width: 98%;
         flex-wrap: wrap;
         padding:0;
