@@ -1,14 +1,15 @@
 /***********Moblie View*************/
 @media (min-width:320px) and (max-width: 767px) {
      body {
-        width: 90%;
-        overflow-x:scroll;
+        min-width: 100%;
+        overflow:hidden;
         margin: 0;
         padding:0;
     }
 
     .navbar {
         display: flex;
+         overflow:hidden;
         flex-wrap: nowrap;
         width: 100%;
         justify-content: space-between;
@@ -90,6 +91,7 @@
     /* The Modal (background) */
     .modal {
         width: 98%; /* Full width */
+         overflow:hidden;
     }
     .modal-content {
         background-color: #fefefe;
@@ -123,7 +125,7 @@
     /***********Banner Area************/
     .bannerArea {
         height: auto;
-        
+        overflow:hidden;
     }
 
         .bannerArea h1 {
@@ -142,6 +144,7 @@
     /**************About Us*********/
     .AboutUS {
         width: 90%;
+         overflow:hidden;
     }
 
         .AboutUS .AboutUSText {
@@ -173,6 +176,7 @@
     /***********Services Section*******/
     #section2 {
         padding: 0 5px;
+         overflow:hidden;
     }
 
     .Services {
@@ -187,6 +191,7 @@
         display: flex;
         flex-wrap: wrap;
         width: 100%;
+         overflow:hidden;
     }
 
         .tabButton .tablinks {
@@ -302,6 +307,7 @@
     .softwareFeatures .mainAppFeatures {
         height: auto;
         margin-top: -20px;
+         overflow:hidden;
     }
 
     .mainAppFeatures .Service {
@@ -344,6 +350,7 @@
     /***************clientsPage******/
     .clientsPage {
         width: 100%;
+         overflow:hidden;
     }
 
         .clientsPage .Service h2 {
@@ -370,7 +377,7 @@
     /***********What we do differently**************/
     .WhatDo {
         margin-top: 0;
-
+overflow:hidden;
     }
         .WhatDo .subWhatDo {
             width:98%;
@@ -399,6 +406,7 @@
     /**************ContactPage**********/
     .wholeContactPage {
         width:100%;
+         overflow:hidden;
         display: flex;
         margin-top: 0.5rem;
         flex-direction: column-reverse;
@@ -435,6 +443,7 @@
     }
     /************NewsLetter***********/
     .footContainer .newsLetter {
+         overflow:hidden;
         width: 98%;
         flex-wrap: wrap;
         padding:0;
@@ -467,6 +476,7 @@
     .footContainer {
         background-color: darkslategrey;
         opacity:1.2;
+         overflow:hidden;
     }
     .footContainer .foot {
         width: 90%;
@@ -476,7 +486,7 @@
         justify-content: center;
         flex-wrap: wrap;
         height: auto;
-       
+       overflow:hidden;
     }
     .foot i {
         color: crimson;
@@ -494,6 +504,10 @@
         .footContainer .foot .footerVideos {
             width: 100%;
         }
+     .footerLastPage
+     {
+         overflow:hidden; 
+     }
     .lastFooterPage i {
         line-height: 40px;
         width: 40px;
