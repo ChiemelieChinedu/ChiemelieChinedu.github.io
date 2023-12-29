@@ -2,13 +2,11 @@
 @media (min-width:320px) and (max-width: 767px) {
     body {
         width: 100%;
-        overflow-x:hidden;
         margin: 0;
         padding:0;
     }
 
     .navbar {
-
         display: flex;
         flex-wrap: nowrap;
         width: 100%;
@@ -240,13 +238,11 @@
         width: 100%;
         padding: 6px 0px;
         margin-left: 0px;
-        overflow-x: hidden;
     }
 
     .tabcontentBody {
         flex-wrap: wrap;
         height: auto;
-        overflow: hidden;
         padding: 0 8px;
         margin-top: -10px;
     }
@@ -452,7 +448,6 @@
         flex-wrap: wrap;
         padding: 0;
         background-color: black;
-        overflow-x: hidden;
     }
 
         .footContainer .newsLetter h3 {
